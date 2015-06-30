@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_53"><a name="0.2.Portability|outline" id="0.2.Portability|outline"></a>
+Portability</h2> 	  <p class="calibre3">When I joined Microsoft, they were already writing compilers for Intel's next-generation Itanium processor, which didn't actually release until 2001. Itanium was to enable Intel to incorporate all they had learned in creating their x86 processors, first introduced in the 1970s. This 64-bit chip which removed all of the previous compounded ugliness, leaving a simpler and therefore potentially cheaper and faster design in its place.</p>
+ <p class="calibre3"> <img src="wordpress_html_m1dab127d.jpg" border="0" class="calibre6"/><br class="calibre4"/>Beautiful new chip, but even though it included x86 compatibility, it was still incompatible with existing C and C++.<a name="sdfootnote49anc" href="epub_split_112.html#sdfootnote49sym" id="sdfootnote49anc"><sup class="calibre7">14</sup></a>
+</p>
+ <p class="calibre3">In spite of the years of R&amp;D and Intel's enormous resources, the chip is hardly used today, even on servers. The reason this chip hasn't yet taken off is literally a billion-dollar question, causing Sun founder Scott McNealy to dub it the “Itanic”.<a name="sdfootnote50anc" href="epub_split_112.html#sdfootnote50sym" id="sdfootnote50anc"><sup class="calibre7">15</sup></a>
+</p>
+ <p class="calibre3">The biggest obstacle Intel faced was the fact that our pyramid of C and C++ code running on PCs today is compiled for the x86 processor. Such programs won't run without at least re-compiling the source for another processor, and it might even require changes to the software because it is easy to write non-portable C/C++. Consequently, the adoption of new hardware is significantly limited by the fact that you have to find every piece of code out there, and recompile it. What this ends up meaning is that while a lot of your stuff works, some of it doesn't. Itanium Linux had no Flash player or Adobe Reader till very recently, two significant stumbling blocks for desktop deployments, and even one obstacle can be too many.<a name="sdfootnote51anc" href="epub_split_112.html#sdfootnote51sym" id="sdfootnote51anc"><sup class="calibre7">16</sup></a>
+</p>
+ <p class="calibre3">GC solves portability issues because programs written in languages such as Java, C#, Python, etc. are no longer compiled for any specific processor. By comparison a C/C++ executable program is just a blob of processor-specific code containing no information about what functions and other metadata are inside it. Its contents are completely opaque to the system, and the processor just starts blindly executing it. To a GC system, a blob of binary code is insufficient.</p>
+ <p class="calibre3">Like stores in the real world, GC systems in principle need to close to take inventory. However, unlike stores, they cannot just kick all the existing customers out, or wait for them to leave. So it does the equivalent of locking the doors, not letting any customers in or out (halts execution of code), and tabulating what is on the shelves and in the shopping carts (what memory is in use). Once it has an accurate account, it can then re-open the doors and let existing customers leave, and new ones enter (program execution resumes.)<a name="sdfootnote52anc" href="epub_split_112.html#sdfootnote52sym" id="sdfootnote52anc"><sup class="calibre7">17</sup></a>
+</p>
+ <p class="calibre3">When GC pauses code, it needs to know what function the processor is currently executing, and even <i class="calibre5">where </i>in that function it is:</p>
+ <p lang="zxx" class="calibre3">void ExampleFunction()</p>
+ <p lang="zxx" class="calibre3">{</p>
+ <p lang="zxx" class="calibre3">    int x = SquareNum(3); //If execution stops here, no memory</p>
+ <p lang="zxx" class="calibre3">                          //allocated yet.</p>
+ <p lang="zxx" class="calibre3"><br class="calibre4"/></p>
+ <p lang="zxx" class="calibre3">    object o = new object(); //This allocates memory into 'o'.</p>
+ <p lang="zxx" class="calibre3">    DoStuffWithObject(o); //If execution stops here, 'o' is in use.</p>
+ <p lang="zxx" class="calibre3"><br class="calibre4"/></p>
+ <p lang="zxx" class="calibre3">    int y = SquareNum(4); //If execution stops here, 'o' is no</p>
+ <p lang="zxx" class="calibre3">                          //longer in use, and can be cleaned up.</p>
+ <p lang="zxx" class="calibre3">}</p>
+ <p class="calibre3">GC programs in principle need to know what your processor is doing at each moment in time to precisely inventory memory.</p>
+ <p class="calibre3">The garbage collector needs to be able to know what objects are “live” in the system at every moment in time, but this depends on exactly what line of code the processor is executing when the inventory process is taking place. A C or C++ executable isn't required to have this sort of information available, but GC requires a rich understanding of the code in order to do its job.<a name="sdfootnote53anc" href="epub_split_112.html#sdfootnote53sym" id="sdfootnote53anc"><sup class="calibre7">18</sup></a>
+ Therefore, when a program is distributed for a GC language, it is delivered either in source form, or converted to a bytecode, a more efficient format to parse, but with very little loss of information compared to the original source.<a name="sdfootnote54anc" href="epub_split_112.html#sdfootnote54sym" id="sdfootnote54anc"><sup class="calibre7">19</sup></a>
+</p>
+ <p lang="zxx" class="calibre3">.assembly helloworld {}</p>
+ <p lang="zxx" class="calibre3">.method public static void MyMain() cil managed</p>
+ <p lang="zxx" class="calibre3">{  </p>
+ <p lang="zxx" class="calibre3">    .entrypoint</p>
+ <p lang="zxx" class="calibre3">    ldstr "Hello, World!"</p>
+ <p lang="zxx" class="calibre3">    call void [mscorlib]System.Console::WriteLine(string)</p>
+ <p lang="zxx" class="calibre3">    ret</p>
+ <p lang="zxx" class="calibre3">}</p>
+ <p class="calibre3">“Hello, World!” in .Net's bytecode. This is similar to the original C#, though more verbose.</p>
+ <p class="calibre3">In (all of the common) GC systems, the programmer ships source code or bytecode, not a machine-specific binary blob. If all code written for the Macintosh was written in a GC programming language, it would have been zero work for Apple and third-parties to switch to the Intel processor once the GC runtime was ported!<a name="sdfootnote55anc" href="epub_split_112.html#sdfootnote55sym" id="sdfootnote55anc"><sup class="calibre7">20</sup></a>
+</p>
+ <p class="calibre3">In fact, an application written in a GC programming language is automatically portable to chips that haven't even been created yet. We impede our freedom to create new processors when software is not written in portable languages.</p>
+ <p class="calibre3">Portability is one of the holy grails of computing, and while GC code doesn't completely solve cross-operating system portability, it does solve the situation of running the same code on different processors — itself an enormous step.<a name="sdfootnote56anc" href="epub_split_112.html#sdfootnote56sym" id="sdfootnote56anc"><sup class="calibre7">21</sup></a>
+</p>
+ <p class="calibre3">With the source code or bytecode, the GC system has all the information it needs to figure out exactly what is going on when it stops execution. In fact, it also has a lot of information that enables other cool features like reflection, which allows code to query information about an object at runtime. These features create a more dynamic system.</p>
+ <p class="calibre3">We've discussed two advantages of GC: greater reliability and portability. The next topic is code performance, which is the biggest worry when using modern tools. I have had many discussions with smart geeks who insisted that languages such as C# simply weren't suitable for their “fast code.”</p>
+  	 		</body>
+</html>

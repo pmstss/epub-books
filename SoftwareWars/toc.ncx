@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="UND">
+  <head>
+    <meta content="130849a9-54de-4845-9e2f-6d01ec0cd004" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (0.6.45)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+    <meta name="cover" content="cover-image"/>
+  </head>
+  <docTitle>
+    <text>After The Software Wars</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="46d58137-5916-40c3-9103-87ceeb49acd7" playOrder="1">
+      <navLabel>
+        <text>Free Software Battle</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="373b4001-ae8a-4301-9db6-849e20daaf62" playOrder="1">
+      <navLabel>
+        <text>Glossary</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="5c8bdf0c-951d-43c5-884d-3537ab10a0f4" playOrder="1">
+      <navLabel>
+        <text>Wikipedia</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="3c83e2f2-5e7e-40a7-addc-21eeed26f3a7" playOrder="1">
+      <navLabel>
+        <text>Linux</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="2797563b-8cbb-443c-a332-b1e48fcfced7" playOrder="1">
+      <navLabel>
+        <text>AI and Google</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="030f5434-127f-4d1b-8183-a7cb3457e3e8" playOrder="1">
+      <navLabel>
+        <text>Free Software</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="0859c664-9879-4e1f-8e86-c57cce9ffc25" playOrder="1">
+      <navLabel>
+        <text>Patents &amp; Copyright</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="e93d2eec-d3a6-434e-abfc-9205980b24da" playOrder="1">
+      <navLabel>
+        <text>The OS Battle</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="bbc59a22-39d2-4f9e-955b-aed0ffdb30e3" playOrder="1">
+      <navLabel>
+        <text>Tools</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="f1e5194d-4a23-4e00-9818-8792b8ccd79e" playOrder="1">
+      <navLabel>
+        <text>The Java Mess</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="a39b949e-030a-4ce5-ab2a-8d33d123b71c" playOrder="1">
+      <navLabel>
+        <text>Challenges for Free Software</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="b4fcb369-f7dd-4df8-829c-4d7c78087ca1" playOrder="1">
+      <navLabel>
+        <text>Standards &amp; Web</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="426a1573-73ec-4091-8ace-26115fbaf0bd" playOrder="1">
+      <navLabel>
+        <text>Da Future</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="5477c203-d546-4ce2-a3bc-0532421f7adb" playOrder="1">
+      <navLabel>
+        <text>Afterword</text>
+      </navLabel>
+      <content src="epub_split_000.html"/>
+    </navPoint>
+    <navPoint id="f20327d4-42a1-4ef2-a241-e4ecc76c3eda" playOrder="2">
+      <navLabel>
+        <text>1</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote1sym"/>
+    </navPoint>
+    <navPoint id="40201c8d-f056-47ad-a215-73fd62e02eb0" playOrder="3">
+      <navLabel>
+        <text>2</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote2sym"/>
+    </navPoint>
+    <navPoint id="8e6941ad-f45d-4141-a2be-86acab072567" playOrder="4">
+      <navLabel>
+        <text>3</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote3sym"/>
+    </navPoint>
+    <navPoint id="3206e1b1-6887-4944-b22b-c364f10857bc" playOrder="5">
+      <navLabel>
+        <text>4</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote8sym"/>
+    </navPoint>
+    <navPoint id="efd979cb-ea20-4e29-b0fd-7a9735aa129f" playOrder="6">
+      <navLabel>
+        <text>5</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote9sym"/>
+    </navPoint>
+    <navPoint id="64beaa45-15c9-4d2e-8239-d21940091f36" playOrder="7">
+      <navLabel>
+        <text>6</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote10sym"/>
+    </navPoint>
+    <navPoint id="57f49160-dcdd-47f7-9924-3dd152b5724f" playOrder="8">
+      <navLabel>
+        <text>7</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote11sym"/>
+    </navPoint>
+    <navPoint id="6c13421e-97fc-4196-bf9e-e78150ce0c67" playOrder="9">
+      <navLabel>
+        <text>8</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote12sym"/>
+    </navPoint>
+    <navPoint id="1b5c615c-0aeb-4f08-a31b-587187eaca01" playOrder="10">
+      <navLabel>
+        <text>9</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote13sym"/>
+    </navPoint>
+    <navPoint id="9ca4889a-0fee-4a7d-8e2a-2f179f392e1e" playOrder="11">
+      <navLabel>
+        <text>10</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote14sym"/>
+    </navPoint>
+    <navPoint id="5a50cc78-c99d-407b-b407-8081ca3a6f0b" playOrder="12">
+      <navLabel>
+        <text>11</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote46sym"/>
+    </navPoint>
+    <navPoint id="86c5933e-95f2-47aa-bcc8-61c2b4a8a07e" playOrder="13">
+      <navLabel>
+        <text>12</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote47sym"/>
+    </navPoint>
+    <navPoint id="059bdf61-768c-4bf5-9d96-e4351fc9d28a" playOrder="14">
+      <navLabel>
+        <text>13</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote48sym"/>
+    </navPoint>
+    <navPoint id="13d9b12f-0afc-48f8-93e6-8a67983b97b4" playOrder="15">
+      <navLabel>
+        <text>14</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote49sym"/>
+    </navPoint>
+    <navPoint id="d18bbab4-46b9-4e2d-b2c9-5c7b475a2f04" playOrder="16">
+      <navLabel>
+        <text>15</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote50sym"/>
+    </navPoint>
+    <navPoint id="1e5f449c-1e78-44e4-a1cf-61ada64adf4b" playOrder="17">
+      <navLabel>
+        <text>16</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote51sym"/>
+    </navPoint>
+    <navPoint id="8b5b2bab-d646-402d-8d00-9e7142825554" playOrder="18">
+      <navLabel>
+        <text>17</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote52sym"/>
+    </navPoint>
+    <navPoint id="657b809a-8e7d-4f90-855f-cfc34783eacf" playOrder="19">
+      <navLabel>
+        <text>18</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote53sym"/>
+    </navPoint>
+    <navPoint id="9742b833-3cf7-46f0-95e3-254cc493cb8c" playOrder="20">
+      <navLabel>
+        <text>19</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote54sym"/>
+    </navPoint>
+    <navPoint id="a46a32f8-3118-4fff-82b6-e6955f1dc01a" playOrder="21">
+      <navLabel>
+        <text>20</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote55sym"/>
+    </navPoint>
+    <navPoint id="e94e5147-9100-47a5-86ba-5235200161b0" playOrder="22">
+      <navLabel>
+        <text>21</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote56sym"/>
+    </navPoint>
+    <navPoint id="f680ce64-d586-49d2-b654-17cf3021e7ac" playOrder="23">
+      <navLabel>
+        <text>22</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote57sym"/>
+    </navPoint>
+    <navPoint id="8714bccc-9425-454c-959e-ad5695956f8a" playOrder="24">
+      <navLabel>
+        <text>23</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote58sym"/>
+    </navPoint>
+    <navPoint id="11b883a5-7027-47a4-8d5f-f0e46609436d" playOrder="25">
+      <navLabel>
+        <text>24</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote59sym"/>
+    </navPoint>
+    <navPoint id="3cb30cb3-ce4a-41d2-9cf0-abc1fa567090" playOrder="26">
+      <navLabel>
+        <text>25</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote60sym"/>
+    </navPoint>
+    <navPoint id="add6e6d6-73ad-47da-8973-95f6b481988c" playOrder="27">
+      <navLabel>
+        <text>26</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote61sym"/>
+    </navPoint>
+    <navPoint id="9836c793-7693-488e-a46a-f8d6a6bd18de" playOrder="28">
+      <navLabel>
+        <text>27</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote62sym"/>
+    </navPoint>
+    <navPoint id="66521a8b-b222-4bd7-829d-c1912236db2b" playOrder="29">
+      <navLabel>
+        <text>28</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote63sym"/>
+    </navPoint>
+    <navPoint id="e8c8edba-9bf0-4a51-9a46-51a88d395b7a" playOrder="30">
+      <navLabel>
+        <text>29</text>
+      </navLabel>
+      <content src="epub_split_112.html#sdfootnote64sym"/>
+    </navPoint>
+  </navMap>
+</ncx>

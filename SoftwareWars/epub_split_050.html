@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_50"><a name="1.24.Brief History of Programming|outline" id="1.24.Brief History of Programming|outline"></a>
+ Brief History of Programming</h2> <i class="calibre5">Q. Where did the names “C” and “C++” come from?  </i> <i class="calibre5">A. They were grades.  </i> <i class="calibre5">—Jerry Leichter  </i> <i class="calibre5">If C gives you enough rope to hang yourself, then C++ gives you enough rope to bind and gag your neighborhood, rig the sails on a small ship, and still have enough rope to hang yourself from the yardarm.</i> <i class="calibre5">—Anonymous  </i> <p class="calibre3">For the first 60 years computers were programed, and input and output was done using punch cards.<span><a name="sdfootnote37anc" href="epub_split_112.html#sdfootnote37sym" id="sdfootnote37anc"><sup class="calibre7">2</sup></a>
+</span> Punch cards were invented for the 1890 census by Herman Hollerith, founder of the firm which was eventually to become IBM. Punch card machines operate on the same principles as modern computers but have one millionth the memory. Code reuse was impossible because one couldn't copy and paste punch cards.</p>
+ <p class="calibre3"> <img src="wordpress_html_42a12ca9.jpg" border="0" class="calibre6"/><br class="calibre4"/>IBM's first computer, used for the 1890 census. Punch cards had been around for 110 years before the world heard of “pregnant chads”.</p>
+ <p class="calibre3">The first programing languages which ran on devices we would recognize today as computers were known as assembly language, and were first created in the 1950s. Programmers almost had to comment explaining what each line of code did because it was inscrutable otherwise:</p>
+ <p lang="zxx" class="calibre3">        .TITLE  HELLO WORLD</p>
+ <p lang="zxx" class="calibre3">        .MCALL  .TTYOUT,.EXIT</p>
+ <p lang="zxx" class="calibre3">HELLO:: MOV     #MSG,R1  ;STARTING ADDRESS OF STRING</p>
+ <p lang="zxx" class="calibre3">1$:     MOVB    (R1)+,R0 ;FETCH NEXT CHARACTER</p>
+ <p lang="zxx" class="calibre3">        BEQ     DONE     ;IF ZERO, EXIT LOOP</p>
+ <p lang="zxx" class="calibre3">        .TTYOUT          ;OTHERWISE PRINT IT</p>
+ <p lang="zxx" class="calibre3">        BR      1$       ;REPEAT LOOP</p>
+ <p lang="zxx" class="calibre3">DONE:   .EXIT</p>
+ <p lang="zxx" class="calibre3">MSG:    .ASCIZ /HELLO, WORLD!/</p>
+ <p lang="zxx" class="calibre3">        .END    HELLO</p>
+ <p class="calibre3">Code to display “Hello, World!” in DEC's PDP assembly language.</p>
+ <p class="calibre3"> I worked with an engineer in Office named Murray Sargent who insisted that with practice, you could write in assembly language as quickly as you could write in C. However, this is someone who wrote a physics textbook, after creating a word processor to compose his textbook in, so I never took that statement very seriously. (Working at Microsoft was sometimes intimidating!)</p>
+ <p class="calibre3">As a college student, I took one assembly language class, which is the perfect amount for a budding computer scientist. I learned about the low-level concepts of computers: pointers, registers, the stack versus the heap,<span> etc.</span></p>
+ <p class="calibre3">In addition to being cryptic, the biggest problem with assembly language instructions was that there were a lot of them, as each language contained details about the particular processor it was designed to run on. As a result, in order to run your software on a different computer, you were forced to alter nearly every line of code.</p>
+ <p class="calibre3">Therefore, one of the biggest advancements in computing was Bell Labs' creation of the programming language “C” in 1970. Compared to assembly language, code written in C is almost English:</p>
+ <p lang="zxx" class="calibre3"> #include &lt;stdio.h&gt;<br class="calibre4"/>int main(void)</p>
+ <p lang="zxx" class="calibre3">{</p>
+ <p lang="zxx" class="calibre3">    printf("Hello, World!\n");</p>
+ <p lang="zxx" class="calibre3">    return 0;</p>
+ <p lang="zxx" class="calibre3">}</p>
+ <p class="calibre3">“Hello, World!” in C. This is much easier to read than assembly language, but still has weird things like <span>“#include”.</span></p>
+ <p class="calibre3"> C is more comprehensible, but more importantly, by simply swapping the compiler, it enables software written in C to run on every computer in existence today with few changes required. In building the standard replacement for assembly language, Bell Labs changed computing.</p>
+ <p class="calibre3">Assembly language actually still exists in the nooks and crannies of modern computers: deep in the code of the operating system kernel, inside game engines, and in code to program specialized graphics or math processors. However, most processor-specific knowledge has moved out of the code a programmer writes and into the compiler, which is a huge step up.</p>
+ <p class="calibre3">While developers at Microsoft used assembly language in the very early years, when I joined in 1993, nearly all code was written in C or C++, and that is still true today.</p>
+ <p class="calibre3">  <img src="wordpress_html_52349440.jpg" border="0" class="calibre6"/><br class="calibre4"/><i class="calibre5">Bill Gates                                                                         Paul Allen</i></p>
+ <p class="calibre14"> <i class="calibre5">Microsoft, 1978</i></p>
+ <p class="calibre3"> Bill Gates quit coding somewhere in this timeframe.</p>
+ <p class="calibre3">Our most important codebases — Office and OpenOffice, Internet Explorer and Firefox, SQL Server and MySQL, IIS and Apache — are written in C or C++ today.</p>
+ <p class="calibre3">The world spent the first 1,000 man-years of software development primarily in assembly language, but most programs are written in C or C++. Man has spent 400,000 man-years in those two languages, the same amount of time that the Egyptians spent building the Great Pyramid of Giza:</p>
+ <p class="calibre3"> <img src="wordpress_html_m770cf035.jpg" border="0" class="calibre6"/><br class="calibre4"/>Man spent as much time programming in C and C++ as building the pyramids of Giza. Unfortunately, the software used to build our software looks as old and cracked as those pyramids do today.</p>
+ <p class="calibre3"><span>Today, the free software community and Microsoft are locked in a closely fought battle: Firefox is comparable, but not dramatically better than IE. This is because neither has yet adopted a productive new programming language for such a large and important codebase. They are warring armies of patient cavemen.</span></p>
+ <p class="calibre3"><span><span><span>In fact, what both C and C++ are missing is an innovation known as “garbage collection”</span></span></span> (GC)<span>, or automatic memory management, </span>an idea so subtle and clever that it would be worthy of the first Nobel Prize in Computer Science.</p>
+ </body>
+</html>

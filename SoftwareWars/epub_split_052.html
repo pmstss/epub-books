@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_52"><a name="0.1.Reliability|outline" id="0.1.Reliability|outline"></a>
+ 		Reliability</h2> 	  <i class="calibre5">Therefore everyone who hears these words of mine and puts them into practice is like a wise man who built his house on the rock. The rain came down, the streams rose, and the winds blew and beat against that house; yet it did not fall, because it had its foundation on the rock. But everyone who hears these words of mine and does not put them into practice is like a foolish man who built his house on sand. The rain came down, the streams rose, and the winds blew and beat against that house, and it fell with a great crash.</i> <i class="calibre5">—Matthew 7:24-27</i> <p class="calibre3"> <img src="wordpress_html_498d3b25.jpg" border="0" class="calibre6"/><br class="calibre4"/>If the software of Star Wars was no more reliable than today's...</p>
+ <p class="calibre3"><span>Reliability, according to Wikipedia, is “t</span>he ability of a device or system to <span><span>perform a required function</span></span> under stated conditions for a specified period of time.” In software, the specified period of time is forever, because unlike metal and other things containing atoms, it doesn't wear out.</p>
+ <p class="calibre3">For example, reliability means that the computer does the same things for the same inputs every time. If you create a function to add two numbers, it should always work for all numbers. If your computer gets hacked and doesn't respond to your input, it isn't reliable. Even performance is related to reliability: if your computer is wasting CPU cycles and is no longer responsive, it isn't reliable.</p>
+ <p class="calibre3">Today, few would say that computers are completely reliable. Maybe your cable box crashes: “Comcast: On Demand, Sometimes.” Maybe your laptop doesn't recognize the wireless network in one particular Internet cafe. I have trained my family to know that whenever their computer is misbehaving, they should reboot the system before calling me. This fixes any errors where the memory is in an unspecified state, which is the most common computer problem.</p>
+ <p class="calibre3">Reliability is important because software is built up as a series of layers. At one level is the code displaying a file open dialog box, and far below is a device driver reading the file you selected as a series of scattered data blocks on the hard drive. Every layer of software needs to be reliable because it is either being used by other software or by a human. Both humans and software need a reliable foundation.</p>
+ <p class="calibre3">A tiny bug in its software caused the crash of one of the European Space Agency's Ariane 5 rockets, costing $370 million:<a name="sdfootnote41anc" href="epub_split_112.html#sdfootnote41sym" id="sdfootnote41anc"><sup class="calibre7">6</sup></a>
+</p>
+ <p class="calibre3">  <img src="wordpress_html_74469ccd.jpg" border="0" class="calibre6"/><br class="calibre4"/><br class="calibre4"/></p>
+ <p class="calibre3">When your computer crashes, you can reboot it; when your rocket crashes, there is nothing to reboot. The Mars Spirit and Opportunity rovers had a file system bug which made the rovers unresponsive, nearly ending the project before they even landed!<a name="sdfootnote42anc" href="epub_split_112.html#sdfootnote42sym" id="sdfootnote42anc"><sup class="calibre7">7</sup></a>
+</p>
+ <p class="calibre3"><span>While it isn't usually the case that a software bug will cause a rocket to crash, it is typically the case that all of the software layers depending on that buggy code will also fail. Software reliability is even trickier than </span>that<span> because an error in one place can lead to failures far away — this is known in engineering as “cascading failures.” If an application gets confused and writes invalid data to the disk, other code which reads that info on startup will crash because it wasn't expecting invalid data. Now, your application is crashing on </span><span>startup. In software, perhaps more than in any other type of intellectual property, </span>a bug anywhere can cause problems everywhere, <span>which is why reliability is the ultimate challenge for the software engineer.</span></p>
+ <p class="calibre3"><span><span>Perfect reliability is extremely hard to achieve because software has to deal </span></span><span>with the complexities of the real world. </span><span><span>Ultimately, a key to reliable software is not to let complexity get out of hand. Languages cannot remove the complexity of the world we choose to model inside a computer. However, they can remove many classes of reliability issues</span></span>. <span><span>I'm going to talk about two of the most common and expensive reliability challenges of computers: memory leaks and buffer overruns, and how garbage collection prevents these from happening.</span></span></p>
+  	 		 			<h3 class="calibre9">Memory Leaks</h3> 		 	  <p class="calibre3"> <img src="wordpress_html_m73a6ac42.jpg" border="0" class="calibre6"/><br class="calibre4"/>Web banner ad for a tool to find memory leaks. There is a cottage industry of tools to fix problems which exists only because the programming language is broken in the first place.</p>
+ <p class="calibre3">One of the most common forms of memory corruption code is memory leaks — a common source of computer unreliability and frustration for users that worsens as our code becomes more complicated.<a name="sdfootnote43anc" href="epub_split_112.html#sdfootnote43sym" id="sdfootnote43anc"><sup class="calibre7">8</sup></a>
+</p>
+ <p class="calibre3"><span>Losing the address of your memory is </span>like the sign outside a Chinese dry-cleaner: “No tickie, no laundry.” To prevent leaks, memory should be kept track of carefully. Unfortunately, C and C++ do not provide this basic feature, as you can allocate and lose track of memory in two lines of code:</p>
+ <p lang="zxx" class="calibre3">    byte[] p = new byte[100]; // p points to 100 bytes of memory</p>
+ <p lang="zxx" class="calibre3">           p = NULL;          // p now points to NULL, reference</p>
+ <p lang="zxx" class="calibre3">                              // to 100 bytes lost</p>
+ <p class="calibre3">“New” returns the location of the newly allocated memory, stored into variable p. If you overwrite that variable, the address of your memory is lost, and you can't free it.</p>
+ <p class="calibre3">Writing code in C or C++, in which all unused memory is returned to the operating system, is both complicated and tiresome:</p>
+ <p lang="zxx" class="calibre3">    Person* p = new Person("Linus", "Torvalds", 1969);</p>
+ <p lang="zxx" class="calibre3">    if (p == NULL)    //Out of Memory or other error</p>
+ <p lang="zxx" class="calibre3">        return;</p>
+ <p lang="zxx" class="calibre3"><br class="calibre4"/></p>
+ <p lang="zxx" class="calibre3">    Person* p2 = new Person("Richard", "Stallman", 1953);</p>
+ <p lang="zxx" class="calibre3">    if (p2 == NULL) //Out of Memory or other error</p>
+ <p lang="zxx" class="calibre3">    {</p>
+ <p lang="zxx" class="calibre3">        delete (p);   //Cleanup p because the p2 failed</p>
+ <p lang="zxx" class="calibre3">        return;</p>
+ <p lang="zxx" class="calibre3">    }</p>
+ <p lang="zxx" class="calibre3"><br class="calibre4"/></p>
+ <p lang="zxx" class="calibre3">    MarriageLicense* pml = new MarriageLicense(p, p2)</p>
+ <p lang="zxx" class="calibre3">    if (pml == NULL) //Out of Memory or other error</p>
+ <p lang="zxx" class="calibre3">    {</p>
+ <p lang="zxx" class="calibre3">        delete (p);   //Cleanup p and p2</p>
+ <p lang="zxx" class="calibre3">        delete (p2);</p>
+ <p lang="zxx" class="calibre3">        return;</p>
+ <p lang="zxx" class="calibre3">    }</p>
+ <p class="calibre3">Code in C or C++ to manually handle out-of-memory conditions and other errors is itself bug-prone, adds complexity, and slows performance.</p>
+ <p class="calibre3">As programmers write increasingly complicated code, the work required to clean it up when things go wrong becomes more difficult. This small example has only three failure cases and the code to remedy these error conditions makes the code twice as complex as it would otherwise be. Furthermore, code which only executes in unlikely failure scenarios doesn't get executed very frequently, and is therefore likely to have bugs in it. A rule in software is: “If the code isn't executed, it probably doesn't work.” And if your error handling code doesn't work, your problems will accumulate faster.</p>
+ <p class="calibre3">Scale this dilemma into <span>millions </span>of lines of interdependent code written by different people and the complexities compound beyond our ability to fix them. <span>To date, there is no non-trivial codebase written in C or C++ which is able to solve all of these error conditions, and every codebase I saw at Microsoft had bugs which occurred when the computer ran out of memory.</span><span><a name="sdfootnote44anc" href="epub_split_112.html#sdfootnote44sym" id="sdfootnote44anc"><sup class="calibre7">9</sup></a>
+</span></p>
+ <p class="calibre3"><span>MySQL, an otherwise highly reliable database, which powers popular websites of Yahoo! and the Associated Press, still has several memory leaks (and buffer overruns.) Firefox's bug list contains several hundred, though most are obscure now.</span><span><a name="sdfootnote45anc" href="epub_split_112.html#sdfootnote45sym" id="sdfootnote45anc"><sup class="calibre7">10</sup></a>
+</span></p>
+ <p class="calibre3">Let's take a look at why a memory leak can't happen when running on a GC language:</p>
+ <p lang="zxx" class="calibre3">byte[] p = new byte[100]; // Variable "p" points to 100 bytes.</p>
+ <p lang="zxx" class="calibre3">       p = NULL;          // p now points to NULL.</p>
+ <p lang="zxx" class="calibre3">                          // The system can deduce that no variables</p>
+ <p lang="zxx" class="calibre3">                          // are referencing the memory, and therefore</p>
+ <p lang="zxx" class="calibre3">                          // free it.</p>
+ <p class="calibre3">You don't have to call “delete” because the system can infer what memory is in use.</p>
+ <p class="calibre3">After the second line of code executes, “p” no longer references the 100 bytes. However, a GC system is smart, and it can take inventory of what memory is in use, and therefore discover that because these 100 bytes are not being referenced, they can be freed. Likewise, if the Chinese laundry knew you had lost your ticket, they would know to throw away your clothes.</p>
+ <p class="calibre3"><i class="calibre5">It is this simple innovation that changes programming.</i> Memory is such a critical part of computers that we need to have the system, not the programmer, keep track of it.<a name="sdfootnote46anc" href="epub_split_112.html#sdfootnote46sym" id="sdfootnote46anc"><sup class="calibre7">11</sup></a>
+</p>
+ <p class="calibre3">It is also quite interesting that GC enables a bunch of infrastructure that Microsoft's OLE/COM component system tried to enable, but COM did it in a very complicated way because it built on top of C and C++, rather that adding the features directly into the language:</p>
+ <table width="468" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" rules="NONE" class="calibre25"><col width="219" class="calibre11"/><col width="230" class="calibre11"/><thead class="calibre15"><tr valign="TOP" class="calibre16"><th width="219" class="calibre17"> 				<p class="calibre3">COM Feature Name</p>
+ 			</th> 			<th width="230" class="calibre17"> 				<p class="calibre3">.Net &amp; Java 				Feature Name</p>
+ 			</th> 		</tr></thead><tbody class="calibre18"><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">Reference Counting</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">Garbage Collection</p>
+ 			</td> 		</tr><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">BSTR</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">Unicode strings</p>
+ 			</td> 		</tr><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">Type Libraries</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">metadata + bytecodes / IL</p>
+ 			</td> 		</tr><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">IUnknown</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">Everything is an Object</p>
+ 			</td> 		</tr><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">IDispatch</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">Reflection</p>
+ 			</td> 		</tr><tr class="calibre16"><td width="219" class="calibre13"> 				<p class="calibre14">DCOM</p>
+ 			</td> 			<td width="230" class="calibre13"> 				<p class="calibre14">Remoting and Web Services</p>
+ 			</td> 		</tr></tbody></table><p class="calibre3">COM contains a lot of the same infrastructure that GC systems have, which suggests a deep similarity of some kind. Doing these features outside the language, however, made writing COM more tedious, difficult, and error-prone. “.Net” completely supersedes COM, and in much simpler packaging, so you will not hear Microsoft talk about COM again, but it will live on for many years in nearly every Microsoft codebase, and many external ones.</p>
+  	 		 			<h3 class="calibre9">Buffer Overruns</h3> 		 	  <p class="calibre3">As bad as memory leaks are because they often cause crashes, buffer overruns are worse because your machine can get hijacked! Buffer overruns are the most common type of security bug, and a major nemesis of the computer industry. <span>Microsoft's code has fallen prey to a number of buffer overruns; the Code Red virus, which infected Microsoft's web server and caused rolling outages on the Internet, is </span><a href="http://www.newsfactor.com/perl/story/12668.html"><span><span>estimated</span></span></a>
+<span> to have cost the industry two billion dollars. Free software is certainly not immune to this either; on a daily basis my Ubuntu operating system downloads fixes to newly discovered buffer overruns.</span><span><a name="sdfootnote47anc" href="epub_split_112.html#sdfootnote47sym" id="sdfootnote47anc"><sup class="calibre7">12</sup></a>
+</span></p>
+ <p class="calibre3">Like with memory leaks, you can create and overrun a buffer with just two lines of code:</p>
+ <p lang="zxx" class="calibre3">    int* p = new int[50]; //Allocate 50 entries, referenced 0-49</p>
+ <p lang="zxx" class="calibre3">         p[50] = 7;       //Write to 51<sup class="calibre7">st</sup> entry, “off by 1” bug</p>
+ <p class="calibre3">C and C++ do not validate memory access, so a programmer can intentionally or unintentionally read or write to memory he shouldn't have access to.</p>
+ <p class="calibre3"><span>If hackers find a piece of code which doesn't validate a buffer length, they can send to that computer, not the usual data of an e-</span><span>mail or picture, but a carefully crafted block of evil </span><i class="calibre5">code, </i>causing <span><span>the system to start executing the hacker's software. A buffer overrun exploit is like a virus in the biological world: imagine cells which would unquestioningly incorporate any DNA they happened upon.</span></span></p>
+ <p class="calibre3">In addition to knowing what memory is in use, a GC system knows the size of every buffer, and so can validate all reads and writes to memory. The computer, not the error-prone programmer, makes sure memory doesn't ever leak or become corrupt. <i class="calibre5"><span>Garbage collection</span></i><i class="calibre5"> is a necessary, if insufficient, precondition of the better code that we seek. </i> </p>
+ <p class="calibre3">While GC is necessary for reliability, it provides many other advantages.<a name="sdfootnote48anc" href="epub_split_112.html#sdfootnote48sym" id="sdfootnote48anc"><sup class="calibre7">13</sup></a>
+</p>
+  	 		</body>
+</html>

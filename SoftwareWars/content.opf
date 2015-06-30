@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:publisher>KeithCu press</dc:publisher>
+    <meta name="calibre:series_index" content="1"/>
+    <dc:description>First attempt at an epub version.</dc:description>
+    <dc:language>en</dc:language>
+    <dc:creator opf:file-as="Curtis, Keith Cary" opf:role="aut">Keith Cary Curtis</dc:creator>
+    <meta name="calibre:timestamp" content="2010-03-27T04:31:19.627132+00:00"/>
+    <dc:title>After The Software Wars</dc:title>
+    <dc:date>2010-03-27T04:31:19.627144+00:00</dc:date>
+    <dc:contributor opf:role="bkp">calibre (0.6.45) [http://calibre-ebook.com]</dc:contributor>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">130849a9-54de-4845-9e2f-6d01ec0cd004</dc:identifier>
+  </metadata>
+  <manifest>
+    <item href="cover.png" id="cover-image" media-type="image/png"/>
+    <item href="cover.html" id="cover" media-type="application/xhtml+xml"/>
+    <item href="epub_split_000.html" id="html113" media-type="application/xhtml+xml"/>
+    <item href="epub_split_001.html" id="html112" media-type="application/xhtml+xml"/>
+    <item href="epub_split_002.html" id="html111" media-type="application/xhtml+xml"/>
+    <item href="epub_split_003.html" id="html110" media-type="application/xhtml+xml"/>
+    <item href="epub_split_004.html" id="html109" media-type="application/xhtml+xml"/>
+    <item href="epub_split_005.html" id="html108" media-type="application/xhtml+xml"/>
+    <item href="epub_split_006.html" id="html107" media-type="application/xhtml+xml"/>
+    <item href="epub_split_007.html" id="html106" media-type="application/xhtml+xml"/>
+    <item href="epub_split_008.html" id="html105" media-type="application/xhtml+xml"/>
+    <item href="epub_split_009.html" id="html104" media-type="application/xhtml+xml"/>
+    <item href="epub_split_010.html" id="html103" media-type="application/xhtml+xml"/>
+    <item href="epub_split_011.html" id="html102" media-type="application/xhtml+xml"/>
+    <item href="epub_split_012.html" id="html101" media-type="application/xhtml+xml"/>
+    <item href="epub_split_013.html" id="html100" media-type="application/xhtml+xml"/>
+    <item href="epub_split_014.html" id="html99" media-type="application/xhtml+xml"/>
+    <item href="epub_split_015.html" id="html98" media-type="application/xhtml+xml"/>
+    <item href="epub_split_016.html" id="html97" media-type="application/xhtml+xml"/>
+    <item href="epub_split_017.html" id="html96" media-type="application/xhtml+xml"/>
+    <item href="epub_split_018.html" id="html95" media-type="application/xhtml+xml"/>
+    <item href="epub_split_019.html" id="html94" media-type="application/xhtml+xml"/>
+    <item href="epub_split_020.html" id="html93" media-type="application/xhtml+xml"/>
+    <item href="epub_split_021.html" id="html92" media-type="application/xhtml+xml"/>
+    <item href="epub_split_022.html" id="html91" media-type="application/xhtml+xml"/>
+    <item href="epub_split_023.html" id="html90" media-type="application/xhtml+xml"/>
+    <item href="epub_split_024.html" id="html89" media-type="application/xhtml+xml"/>
+    <item href="epub_split_025.html" id="html88" media-type="application/xhtml+xml"/>
+    <item href="epub_split_026.html" id="html87" media-type="application/xhtml+xml"/>
+    <item href="epub_split_027.html" id="html86" media-type="application/xhtml+xml"/>
+    <item href="epub_split_028.html" id="html85" media-type="application/xhtml+xml"/>
+    <item href="epub_split_029.html" id="html84" media-type="application/xhtml+xml"/>
+    <item href="epub_split_030.html" id="html83" media-type="application/xhtml+xml"/>
+    <item href="epub_split_031.html" id="html82" media-type="application/xhtml+xml"/>
+    <item href="epub_split_032.html" id="html81" media-type="application/xhtml+xml"/>
+    <item href="epub_split_033.html" id="html80" media-type="application/xhtml+xml"/>
+    <item href="epub_split_034.html" id="html79" media-type="application/xhtml+xml"/>
+    <item href="epub_split_035.html" id="html78" media-type="application/xhtml+xml"/>
+    <item href="epub_split_036.html" id="html77" media-type="application/xhtml+xml"/>
+    <item href="epub_split_037.html" id="html76" media-type="application/xhtml+xml"/>
+    <item href="epub_split_038.html" id="html75" media-type="application/xhtml+xml"/>
+    <item href="epub_split_039.html" id="html74" media-type="application/xhtml+xml"/>
+    <item href="epub_split_040.html" id="html73" media-type="application/xhtml+xml"/>
+    <item href="epub_split_041.html" id="html72" media-type="application/xhtml+xml"/>
+    <item href="epub_split_042.html" id="html71" media-type="application/xhtml+xml"/>
+    <item href="epub_split_043.html" id="html70" media-type="application/xhtml+xml"/>
+    <item href="epub_split_044.html" id="html69" media-type="application/xhtml+xml"/>
+    <item href="epub_split_045.html" id="html68" media-type="application/xhtml+xml"/>
+    <item href="epub_split_046.html" id="html67" media-type="application/xhtml+xml"/>
+    <item href="epub_split_047.html" id="html66" media-type="application/xhtml+xml"/>
+    <item href="epub_split_048.html" id="html65" media-type="application/xhtml+xml"/>
+    <item href="epub_split_049.html" id="html64" media-type="application/xhtml+xml"/>
+    <item href="epub_split_050.html" id="html63" media-type="application/xhtml+xml"/>
+    <item href="epub_split_051.html" id="html62" media-type="application/xhtml+xml"/>
+    <item href="epub_split_052.html" id="html61" media-type="application/xhtml+xml"/>
+    <item href="epub_split_053.html" id="html60" media-type="application/xhtml+xml"/>
+    <item href="epub_split_054.html" id="html59" media-type="application/xhtml+xml"/>
+    <item href="epub_split_055.html" id="html58" media-type="application/xhtml+xml"/>
+    <item href="epub_split_056.html" id="html57" media-type="application/xhtml+xml"/>
+    <item href="epub_split_057.html" id="html56" media-type="application/xhtml+xml"/>
+    <item href="epub_split_058.html" id="html55" media-type="application/xhtml+xml"/>
+    <item href="epub_split_059.html" id="html54" media-type="application/xhtml+xml"/>
+    <item href="epub_split_060.html" id="html53" media-type="application/xhtml+xml"/>
+    <item href="epub_split_061.html" id="html52" media-type="application/xhtml+xml"/>
+    <item href="epub_split_062.html" id="html51" media-type="application/xhtml+xml"/>
+    <item href="epub_split_063.html" id="html50" media-type="application/xhtml+xml"/>
+    <item href="epub_split_064.html" id="html49" media-type="application/xhtml+xml"/>
+    <item href="epub_split_065.html" id="html48" media-type="application/xhtml+xml"/>
+    <item href="epub_split_066.html" id="html47" media-type="application/xhtml+xml"/>
+    <item href="epub_split_067.html" id="html46" media-type="application/xhtml+xml"/>
+    <item href="epub_split_068.html" id="html45" media-type="application/xhtml+xml"/>
+    <item href="epub_split_069.html" id="html44" media-type="application/xhtml+xml"/>
+    <item href="epub_split_070.html" id="html43" media-type="application/xhtml+xml"/>
+    <item href="epub_split_071.html" id="html42" media-type="application/xhtml+xml"/>
+    <item href="epub_split_072.html" id="html41" media-type="application/xhtml+xml"/>
+    <item href="epub_split_073.html" id="html40" media-type="application/xhtml+xml"/>
+    <item href="epub_split_074.html" id="html39" media-type="application/xhtml+xml"/>
+    <item href="epub_split_075.html" id="html38" media-type="application/xhtml+xml"/>
+    <item href="epub_split_076.html" id="html37" media-type="application/xhtml+xml"/>
+    <item href="epub_split_077.html" id="html36" media-type="application/xhtml+xml"/>
+    <item href="epub_split_078.html" id="html35" media-type="application/xhtml+xml"/>
+    <item href="epub_split_079.html" id="html34" media-type="application/xhtml+xml"/>
+    <item href="epub_split_080.html" id="html33" media-type="application/xhtml+xml"/>
+    <item href="epub_split_081.html" id="html32" media-type="application/xhtml+xml"/>
+    <item href="epub_split_082.html" id="html31" media-type="application/xhtml+xml"/>
+    <item href="epub_split_083.html" id="html30" media-type="application/xhtml+xml"/>
+    <item href="epub_split_084.html" id="html29" media-type="application/xhtml+xml"/>
+    <item href="epub_split_085.html" id="html28" media-type="application/xhtml+xml"/>
+    <item href="epub_split_086.html" id="html27" media-type="application/xhtml+xml"/>
+    <item href="epub_split_087.html" id="html26" media-type="application/xhtml+xml"/>
+    <item href="epub_split_088.html" id="html25" media-type="application/xhtml+xml"/>
+    <item href="epub_split_089.html" id="html24" media-type="application/xhtml+xml"/>
+    <item href="epub_split_090.html" id="html23" media-type="application/xhtml+xml"/>
+    <item href="epub_split_091.html" id="html22" media-type="application/xhtml+xml"/>
+    <item href="epub_split_092.html" id="html21" media-type="application/xhtml+xml"/>
+    <item href="epub_split_093.html" id="html20" media-type="application/xhtml+xml"/>
+    <item href="epub_split_094.html" id="html19" media-type="application/xhtml+xml"/>
+    <item href="epub_split_095.html" id="html18" media-type="application/xhtml+xml"/>
+    <item href="epub_split_096.html" id="html17" media-type="application/xhtml+xml"/>
+    <item href="epub_split_097.html" id="html16" media-type="application/xhtml+xml"/>
+    <item href="epub_split_098.html" id="html15" media-type="application/xhtml+xml"/>
+    <item href="epub_split_099.html" id="html14" media-type="application/xhtml+xml"/>
+    <item href="epub_split_100.html" id="html13" media-type="application/xhtml+xml"/>
+    <item href="epub_split_101.html" id="html12" media-type="application/xhtml+xml"/>
+    <item href="epub_split_102.html" id="html11" media-type="application/xhtml+xml"/>
+    <item href="epub_split_103.html" id="html10" media-type="application/xhtml+xml"/>
+    <item href="epub_split_104.html" id="html9" media-type="application/xhtml+xml"/>
+    <item href="epub_split_105.html" id="html8" media-type="application/xhtml+xml"/>
+    <item href="epub_split_106.html" id="html7" media-type="application/xhtml+xml"/>
+    <item href="epub_split_107.html" id="html6" media-type="application/xhtml+xml"/>
+    <item href="epub_split_108.html" id="html5" media-type="application/xhtml+xml"/>
+    <item href="epub_split_109.html" id="html4" media-type="application/xhtml+xml"/>
+    <item href="epub_split_110.html" id="html3" media-type="application/xhtml+xml"/>
+    <item href="epub_split_111.html" id="html2" media-type="application/xhtml+xml"/>
+    <item href="epub_split_112.html" id="html1" media-type="application/xhtml+xml"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="wordpress_html_128d86fa.jpg" id="added82" media-type="image/jpeg"/>
+    <item href="wordpress_html_1eca7664.png" id="added4" media-type="image/png"/>
+    <item href="wordpress_html_1f66c59a.jpg" id="added55" media-type="image/jpeg"/>
+    <item href="wordpress_html_202eb9e7.png" id="added59" media-type="image/png"/>
+    <item href="wordpress_html_2354b290.jpg" id="added83" media-type="image/jpeg"/>
+    <item href="wordpress_html_24052d0d.png" id="added60" media-type="image/png"/>
+    <item href="wordpress_html_29df290c.jpg" id="added31" media-type="image/jpeg"/>
+    <item href="wordpress_html_2c790c1.jpg" id="added86" media-type="image/jpeg"/>
+    <item href="wordpress_html_2ef4001a.gif" id="added17" media-type="image/gif"/>
+    <item href="wordpress_html_32d2096c.jpg" id="added87" media-type="image/jpeg"/>
+    <item href="wordpress_html_3324d9fd.jpg" id="added20" media-type="image/jpeg"/>
+    <item href="wordpress_html_3671db3d.png" id="added61" media-type="image/png"/>
+    <item href="wordpress_html_36ce04ab.jpg" id="added84" media-type="image/jpeg"/>
+    <item href="wordpress_html_38292437.jpg" id="added26" media-type="image/jpeg"/>
+    <item href="wordpress_html_387a5e1c.png" id="added48" media-type="image/png"/>
+    <item href="wordpress_html_3cfd62e8.jpg" id="added78" media-type="image/jpeg"/>
+    <item href="wordpress_html_3f82fc1c.jpg" id="added85" media-type="image/jpeg"/>
+    <item href="wordpress_html_423f2632.jpg" id="added57" media-type="image/jpeg"/>
+    <item href="wordpress_html_42a12ca9.jpg" id="added40" media-type="image/jpeg"/>
+    <item href="wordpress_html_44a39cc6.png" id="added7" media-type="image/png"/>
+    <item href="wordpress_html_46eb0c8d.jpg" id="added5" media-type="image/jpeg"/>
+    <item href="wordpress_html_498d3b25.jpg" id="added43" media-type="image/jpeg"/>
+    <item href="wordpress_html_4d130eca.jpg" id="added62" media-type="image/jpeg"/>
+    <item href="wordpress_html_52349440.jpg" id="added41" media-type="image/jpeg"/>
+    <item href="wordpress_html_52d11975.png" id="added47" media-type="image/png"/>
+    <item href="wordpress_html_54a677cd.png" id="added70" media-type="image/png"/>
+    <item href="wordpress_html_55290998.jpg" id="added79" media-type="image/jpeg"/>
+    <item href="wordpress_html_56d53074.png" id="added22" media-type="image/png"/>
+    <item href="wordpress_html_5b6442e2.jpg" id="added3" media-type="image/jpeg"/>
+    <item href="wordpress_html_61c12679.jpg" id="added74" media-type="image/jpeg"/>
+    <item href="wordpress_html_61eda4a4.gif" id="added2" media-type="image/gif"/>
+    <item href="wordpress_html_65f2e4c8.jpg" id="added63" media-type="image/jpeg"/>
+    <item href="wordpress_html_664c43b0.png" id="added12" media-type="image/png"/>
+    <item href="wordpress_html_6d930d8d.png" id="added25" media-type="image/png"/>
+    <item href="wordpress_html_6f5b234a.png" id="added34" media-type="image/png"/>
+    <item href="wordpress_html_74469ccd.jpg" id="added44" media-type="image/jpeg"/>
+    <item href="wordpress_html_7552dd2b.png" id="added29" media-type="image/png"/>
+    <item href="wordpress_html_7b3f3ece.png" id="added24" media-type="image/png"/>
+    <item href="wordpress_html_f37f02f.png" id="added80" media-type="image/png"/>
+    <item href="wordpress_html_m13547f3d.jpg" id="added69" media-type="image/jpeg"/>
+    <item href="wordpress_html_m148c9e6d.jpg" id="added33" media-type="image/jpeg"/>
+    <item href="wordpress_html_m14ab91fd.jpg" id="added75" media-type="image/jpeg"/>
+    <item href="wordpress_html_m153ae7f6.png" id="added23" media-type="image/png"/>
+    <item href="wordpress_html_m156b1d9b.jpg" id="added71" media-type="image/jpeg"/>
+    <item href="wordpress_html_m1c91f33b.png" id="added36" media-type="image/png"/>
+    <item href="wordpress_html_m1dab127d.jpg" id="added46" media-type="image/jpeg"/>
+    <item href="wordpress_html_m1e9af381.jpg" id="added11" media-type="image/jpeg"/>
+    <item href="wordpress_html_m1eec46de.jpg" id="added72" media-type="image/jpeg"/>
+    <item href="wordpress_html_m1ff909a1.png" id="added53" media-type="image/png"/>
+    <item href="wordpress_html_m2cf13be8.jpg" id="added1" media-type="image/jpeg"/>
+    <item href="wordpress_html_m2e72af43.jpg" id="added10" media-type="image/jpeg"/>
+    <item href="wordpress_html_m2eca85e0.png" id="added38" media-type="image/png"/>
+    <item href="wordpress_html_m2fb28307.png" id="added30" media-type="image/png"/>
+    <item href="wordpress_html_m30bba2e9.jpg" id="added14" media-type="image/jpeg"/>
+    <item href="wordpress_html_m33a7c5f9.png" id="added28" media-type="image/png"/>
+    <item href="wordpress_html_m345c7259.png" id="added15" media-type="image/png"/>
+    <item href="wordpress_html_m3553d0f4.jpg" id="added50" media-type="image/jpeg"/>
+    <item href="wordpress_html_m3732f1bb.jpg" id="added52" media-type="image/jpeg"/>
+    <item href="wordpress_html_m3f4cb3ed.jpg" id="added13" media-type="image/jpeg"/>
+    <item href="wordpress_html_m41cb5490.png" id="added16" media-type="image/png"/>
+    <item href="wordpress_html_m436d1d22.jpg" id="added56" media-type="image/jpeg"/>
+    <item href="wordpress_html_m45e9032d.png" id="added21" media-type="image/png"/>
+    <item href="wordpress_html_m56e9ed98.jpg" id="added39" media-type="image/jpeg"/>
+    <item href="wordpress_html_m56feae07.jpg" id="added73" media-type="image/jpeg"/>
+    <item href="wordpress_html_m580dc8d.png" id="added27" media-type="image/png"/>
+    <item href="wordpress_html_m5a875436.gif" id="added65" media-type="image/gif"/>
+    <item href="wordpress_html_m5ac7734.png" id="added49" media-type="image/png"/>
+    <item href="wordpress_html_m5bfb194b.gif" id="added51" media-type="image/gif"/>
+    <item href="wordpress_html_m5d545ff8.jpg" id="added76" media-type="image/jpeg"/>
+    <item href="wordpress_html_m5ecfd92.png" id="added6" media-type="image/png"/>
+    <item href="wordpress_html_m60da713d.jpg" id="added67" media-type="image/jpeg"/>
+    <item href="wordpress_html_m60fd44b4.jpg" id="added81" media-type="image/jpeg"/>
+    <item href="wordpress_html_m62a4e410.jpg" id="added54" media-type="image/jpeg"/>
+    <item href="wordpress_html_m62e1158e.jpg" id="added8" media-type="image/jpeg"/>
+    <item href="wordpress_html_m65a3cd33.jpg" id="added77" media-type="image/jpeg"/>
+    <item href="wordpress_html_m69a1ebbe.png" id="added19" media-type="image/png"/>
+    <item href="wordpress_html_m6a45d944.jpg" id="added32" media-type="image/jpeg"/>
+    <item href="wordpress_html_m6d92d773.jpg" id="added58" media-type="image/jpeg"/>
+    <item href="wordpress_html_m7209c4c2.png" id="added66" media-type="image/png"/>
+    <item href="wordpress_html_m73a6ac42.jpg" id="added45" media-type="image/jpeg"/>
+    <item href="wordpress_html_m770cf035.jpg" id="added42" media-type="image/jpeg"/>
+    <item href="wordpress_html_m7c984ade.gif" id="added37" media-type="image/gif"/>
+    <item href="wordpress_html_m7f22dd81.gif" id="added68" media-type="image/gif"/>
+    <item href="wordpress_html_m852cdb1.jpg" id="added35" media-type="image/jpeg"/>
+    <item href="wordpress_html_mc079d7d.jpg" id="added" media-type="image/jpeg"/>
+    <item href="wordpress_html_mc928e69.png" id="added64" media-type="image/png"/>
+    <item href="wordpress_html_md634a1.png" id="added18" media-type="image/png"/>
+    <item href="wordpress_html_mdabc9bc.png" id="added9" media-type="image/png"/>
+    <item href="toc.ncx" media-type="application/x-dtbncx+xml" id="ncx"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover"/>
+    <itemref idref="html113"/>
+    <itemref idref="html112"/>
+    <itemref idref="html111"/>
+    <itemref idref="html110"/>
+    <itemref idref="html109"/>
+    <itemref idref="html108"/>
+    <itemref idref="html107"/>
+    <itemref idref="html106"/>
+    <itemref idref="html105"/>
+    <itemref idref="html104"/>
+    <itemref idref="html103"/>
+    <itemref idref="html102"/>
+    <itemref idref="html101"/>
+    <itemref idref="html100"/>
+    <itemref idref="html99"/>
+    <itemref idref="html98"/>
+    <itemref idref="html97"/>
+    <itemref idref="html96"/>
+    <itemref idref="html95"/>
+    <itemref idref="html94"/>
+    <itemref idref="html93"/>
+    <itemref idref="html92"/>
+    <itemref idref="html91"/>
+    <itemref idref="html90"/>
+    <itemref idref="html89"/>
+    <itemref idref="html88"/>
+    <itemref idref="html87"/>
+    <itemref idref="html86"/>
+    <itemref idref="html85"/>
+    <itemref idref="html84"/>
+    <itemref idref="html83"/>
+    <itemref idref="html82"/>
+    <itemref idref="html81"/>
+    <itemref idref="html80"/>
+    <itemref idref="html79"/>
+    <itemref idref="html78"/>
+    <itemref idref="html77"/>
+    <itemref idref="html76"/>
+    <itemref idref="html75"/>
+    <itemref idref="html74"/>
+    <itemref idref="html73"/>
+    <itemref idref="html72"/>
+    <itemref idref="html71"/>
+    <itemref idref="html70"/>
+    <itemref idref="html69"/>
+    <itemref idref="html68"/>
+    <itemref idref="html67"/>
+    <itemref idref="html66"/>
+    <itemref idref="html65"/>
+    <itemref idref="html64"/>
+    <itemref idref="html63"/>
+    <itemref idref="html62"/>
+    <itemref idref="html61"/>
+    <itemref idref="html60"/>
+    <itemref idref="html59"/>
+    <itemref idref="html58"/>
+    <itemref idref="html57"/>
+    <itemref idref="html56"/>
+    <itemref idref="html55"/>
+    <itemref idref="html54"/>
+    <itemref idref="html53"/>
+    <itemref idref="html52"/>
+    <itemref idref="html51"/>
+    <itemref idref="html50"/>
+    <itemref idref="html49"/>
+    <itemref idref="html48"/>
+    <itemref idref="html47"/>
+    <itemref idref="html46"/>
+    <itemref idref="html45"/>
+    <itemref idref="html44"/>
+    <itemref idref="html43"/>
+    <itemref idref="html42"/>
+    <itemref idref="html41"/>
+    <itemref idref="html40"/>
+    <itemref idref="html39"/>
+    <itemref idref="html38"/>
+    <itemref idref="html37"/>
+    <itemref idref="html36"/>
+    <itemref idref="html35"/>
+    <itemref idref="html34"/>
+    <itemref idref="html33"/>
+    <itemref idref="html32"/>
+    <itemref idref="html31"/>
+    <itemref idref="html30"/>
+    <itemref idref="html29"/>
+    <itemref idref="html28"/>
+    <itemref idref="html27"/>
+    <itemref idref="html26"/>
+    <itemref idref="html25"/>
+    <itemref idref="html24"/>
+    <itemref idref="html23"/>
+    <itemref idref="html22"/>
+    <itemref idref="html21"/>
+    <itemref idref="html20"/>
+    <itemref idref="html19"/>
+    <itemref idref="html18"/>
+    <itemref idref="html17"/>
+    <itemref idref="html16"/>
+    <itemref idref="html15"/>
+    <itemref idref="html14"/>
+    <itemref idref="html13"/>
+    <itemref idref="html12"/>
+    <itemref idref="html11"/>
+    <itemref idref="html10"/>
+    <itemref idref="html9"/>
+    <itemref idref="html8"/>
+    <itemref idref="html7"/>
+    <itemref idref="html6"/>
+    <itemref idref="html5"/>
+    <itemref idref="html4"/>
+    <itemref idref="html3"/>
+    <itemref idref="html2"/>
+    <itemref idref="html1"/>
+  </spine>
+  <guide>
+    <reference href="cover.html" type="cover" title="Title Page"/>
+    <reference href="epub_split_002.html" type="toc" title="Table of Content"/>
+  </guide>
+</package>

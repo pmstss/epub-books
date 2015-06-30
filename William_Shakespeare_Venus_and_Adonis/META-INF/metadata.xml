@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns:thr="http://purl.org/syndication/thread/1.0" xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://www.w3.org/2005/Atom">
+<title>Venus and Adonis</title>
+<id>http://www.feedbooks.com/book/4577</id>
+<author>
+  <name>William Shakespeare</name>
+  <uri>http://www.feedbooks.com/author/494</uri>
+</author>
+<published>2010-01-18T10:19:33Z</published>
+<updated>2015-03-06T16:58:31Z</updated>
+<dcterms:language>en</dcterms:language>
+<dcterms:issued>1593</dcterms:issued>
+<category term="FBFIC000000" label="Fiction" scheme="http://www.feedbooks.com/categories"/>
+<category term="FBPOE000000" label="Poetry" scheme="http://www.feedbooks.com/categories"/>
+<summary>Venus and Adonis is a poem by William Shakespeare, written in 1592-93, with a plot based on passages from Ovid's Metamorphoses. It is a complex, kaleidoscopic work, using constantly shifting tone and perspective to present contrasting views of the...</summary>
+<dcterms:extent>10,058 words</dcterms:extent>
+<dcterms:source>http://www.shakespeare-online.com/sonnets/venus.html</dcterms:source>
+<link type="text/html" rel="alternate" href="http://generation.feedbooks.com/book/4577" title="View on Feedbooks"/>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/4577.epub"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/4577.mobi"/>
+<link type="application/pdf" rel="http://opds-spec.org/acquisition" href="http://generation.feedbooks.com/book/4577.pdf"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image" href="http://covers.feedbooks.net/book/4577.jpg?size=large&amp;t=1425661111"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image/thumbnail" href="http://covers.feedbooks.net/book/4577.jpg?t=1425661111"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=acquisition" rel="http://www.feedbooks.com/opds/same_author" href="http://generation.feedbooks.com/author/494/books/top.atom?lang=en" title="From the same author"/>
+<link type="application/atom+xml;profile=opds-catalog;kind=navigation" rel="related" href="http://generation.feedbooks.com/book/4577/categories.atom" title="Categories for this book"/>
+<link type="application/atom+xml" thr:updated="2010-01-18T01:01:34Z" rel="replies" href="http://generation.feedbooks.com/book/4577/comments.atom" title="Comments for this book (0)" thr:count="0"/>
+<content type="html">&lt;p&gt;Venus and Adonis is a poem by William Shakespeare, written in 1592-93, with a plot based on passages from Ovid's Metamorphoses. It is a complex, kaleidoscopic work, using constantly shifting tone and perspective to present contrasting views of the nature of love.&lt;/p&gt;</content>
+<link type="application/atom+xml;type=entry;profile=opds-catalog" rel="self" href="http://generation.feedbooks.com/book/4577.atom"/>
+  <link type="application/atom+xml" rel="contents" href="http://generation.feedbooks.com/book/4577/contents.atom"/>
+</entry>

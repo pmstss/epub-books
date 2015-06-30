@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_54"><a name="0.3.Efficiency|outline" id="0.3.Efficiency|outline"></a>
+Efficiency</h2> 	  <p class="calibre3">It doesn't matter how fast your code runs if it doesn't give the correct result, but processing power is still an important resource. In fact, code efficiency is even less important than memory usage because if you waste memory, your computer will eventually crash, but if you waste processor cycles, your computer will just be sluggish and annoying. Microsoft has always focused on performance, and has often promoted it as a competitive advantage.<a name="sdfootnote57anc" href="epub_split_112.html#sdfootnote57sym" id="sdfootnote57anc"><sup class="calibre7">22</sup></a>
+</p>
+ <p class="calibre3">If you walk up to a programmer on the street and ask them what they think of Java, one of your answers will be: “slow.”<span><span> At one time, </span></span><span><span>Netscape started working on a web browser written in Java, but they abandoned the effort after one year because of performance worries, and before the Java runtimes got fast.</span></span></p>
+ <p class="calibre3"><span><span>L</span></span>anguages with garbage collection manage more details for you compared to “unmanaged” code, and this by definition adds a performance cost to your application. The need to pause a program while taking inventory of memory is one of the most common reasons cited for not using automatic memory management.<span><span><a name="sdfootnote58anc" href="epub_split_112.html#sdfootnote58sym" id="sdfootnote58anc"><sup class="calibre7">23</sup></a>
+</span></span><span><span> </span></span>Add to this a bias: programmers, from their first class in computer science, are taught that analysis of algorithms revolves primarily around an analysis of code performance.</p>
+ <p class="calibre3">Both pieces of code below are less than 20 lines and look fairly similar, but the one on the left is significantly faster:</p>
+ <table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" class="calibre10"><col width="128*" class="calibre11"/><col width="128*" class="calibre11"/><tr valign="TOP" class="calibre12"><td width="50%" class="calibre13"> 			<p lang="zxx" class="calibre3"> 			static void quicksort(int[] a, 			int l, int r)</p>
+ 			<p lang="zxx" class="calibre3"> 			  {   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    int i, j;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    char x, y;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    i = l; j = r;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    x = a[(l+r)/2];   			</p>
+ 			<p lang="zxx" class="calibre3"> 			   			</p>
+ 			<p lang="zxx" class="calibre3"> 			 do {   			</p>
+ 			<p lang="zxx" class="calibre3"> 			  while((a[i] &lt; x) &amp;&amp; 			(i &lt; r)) i++;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			  while((x &lt; q[j]) &amp;&amp; 			(j &gt; l)) j--;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			   			</p>
+ 			<p lang="zxx" class="calibre3"> 			      if(i &lt;= j) {   			</p>
+ 			<p lang="zxx" class="calibre3"> 			        y = a[i];   			</p>
+ 			<p lang="zxx" class="calibre3"> 			        a[i] = a[j];   			</p>
+ 			<p lang="zxx" class="calibre3"> 			        a[j] = y;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			        i++; j--;   			</p>
+ 			<p lang="zxx" class="calibre3"> 			      }   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    } while(i &lt;= j);   			</p>
+ 			<p lang="zxx" class="calibre3"> 			   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    if(l &lt; j) quicksort(a, 			l, j);   			</p>
+ 			<p lang="zxx" class="calibre3"> 			    if(i &lt; r) quicksort(a, 			i, r);   			</p>
+ 			<p lang="zxx" class="calibre3"> 			  }</p>
+ 		</td> 		<td width="50%" class="calibre13"> 			<p lang="zxx" class="calibre3"> 			static void bubblesort(int[] 			items)</p>
+ 			<p lang="zxx" class="calibre3"> 			{</p>
+ 			<p lang="zxx" class="calibre3"> 			  int i;</p>
+ 			<p lang="zxx" class="calibre3"> 			  int j;</p>
+ 			<p lang="zxx" class="calibre3"> 			  int temp;</p>
+ 			<p lang="zxx" class="calibre3"> 			  int x = items.Length;</p>
+ 			<p lang="zxx" class="calibre3"> 			<br class="calibre4"/></p>
+ 			<p lang="zxx" class="calibre3"> 			  for( i = (x - 1); i &gt;= 0; 			i-- )</p>
+ 			<p lang="zxx" class="calibre3"> 			  {</p>
+ 			<p lang="zxx" class="calibre3"> 			    for( j = 1; j &lt;= i; j++ 			)</p>
+ 			<p lang="zxx" class="calibre3"> 			    {</p>
+ 			<p lang="zxx" class="calibre3"> 			      if( items[j-1] &gt; a[j] 			)</p>
+ 			<p lang="zxx" class="calibre3"> 			      {</p>
+ 			<p lang="zxx" class="calibre3"> 			        temp = items[j-1];</p>
+ 			<p lang="zxx" class="calibre3"> 			        items [j-1] = 			items[j];</p>
+ 			<p lang="zxx" class="calibre3"> 			        items [j] = temp;</p>
+ 			<p lang="zxx" class="calibre3"> 			      }</p>
+ 			<p lang="zxx" class="calibre3"> 			    }</p>
+ 			<p lang="zxx" class="calibre3"> 			  }</p>
+ 			<p lang="zxx" class="calibre3"> 			}</p>
+ 		</td> 	</tr></table><p class="calibre3">Algorithm analysis teaches you that the code on the left should be about 50,000 times faster than the code on the right at sorting one million numbers. The speed of code, not the speed of the language is what matters.<a name="sdfootnote59anc" href="epub_split_112.html#sdfootnote59sym" id="sdfootnote59anc"><sup class="calibre7">24</sup></a>
+</p>
+ <p class="calibre3">Performance is rightfully important because the difference between fast code and slow code can mean the difference between milliseconds and hours. However, I spent years analyzing performance bottlenecks in various codebases at Microsoft, and every performance problem was caused by inefficient algorithms or bad design, not the speed of the language. Fast code written in C would be fast in a GC programming language, and slow code written in a GC programming language would also be slow in C.<a name="sdfootnote60anc" href="epub_split_112.html#sdfootnote60sym" id="sdfootnote60anc"><sup class="calibre7">25</sup></a>
+ The first lesson in the “Bible of Computer Science”, Donald Knuth's compendium of software algorithms, is that the speed of code is determined by the algorithms it incorporates.<a name="sdfootnote61anc" href="epub_split_112.html#sdfootnote61sym" id="sdfootnote61anc"><sup class="calibre7">26</sup></a>
+</p>
+ <p class="calibre3">In the early days of C, you could ask an assembly language programmer what he thought of C, and he'd have said that it was “too slow.” No one says that today, however, because of C's 30 years of maturation, the dramatic progress of hardware, and because its significant other advantages overshadowed its early lackluster performance issues. My first group at Microsoft built FoxPro, which was for many years the fastest PC database, and they quit writing code in assembly language the day they re-wrote a bit of it in C and found it faster!</p>
+ <p class="calibre3">Java and C# have some performance issues today, but the primary reason is that most of the community is still expending energy continuing to optimize C/C++ tools, and not even beginning to explore the many ways to speed up GC systems that are unavailable to the older languages. Even so, let's assume that modern tools slow down code by 20%.<span><span><a name="sdfootnote62anc" href="epub_split_112.html#sdfootnote62sym" id="sdfootnote62anc"><sup class="calibre7">27</sup></a>
+</span></span> Taking a one-time 20% hit is worth it because our current software is ineffectively, or wastefully, using today's processing power. My pedestrian laptop is a now-standard dual-core computer, and it requires only one of the cores running at 2% usage when I type text as fast as I can into this book; even though I am working on a long document, it is redrawing the screen, autocorrecting, spell-checking, updating document statistics, etc. Sometimes CPU usage noticeably peaks in OpenOffice, but that's usually because it is redrawing the screen over and over, or doing some other useless task.</p>
+ <p class="calibre3">Today's software is primitive, i.e. it cannot do a processor-consuming task of intelligent analysis of my writing — rather, the computer is mostly just sitting there. It knows to correct “<span lang="en-US">teh</span>”, but not much <span>mor</span>e. The computer industry should focus less on <span>not wasting</span> a few CPU cycles and more on dreaming up new ways of using them to make our lives easier and better. Our stupid software still has a long way to go.</p>
+  	 		</body>
+</html>

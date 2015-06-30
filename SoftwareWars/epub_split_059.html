@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_59"><a name="2.1.Sun locked up the code|outline" id="2.1.Sun locked up the code|outline"></a>
+ Sun locked up the code</h2> <i class="calibre5">Brilliance is typically the act of an individual, but incredible stupidity can usually be traced to an organization.</i> <i class="calibre5">—Jon Bentley</i> <p class="calibre3">Sun's first mistake was that they failed to do what Bell Labs did with C and C++: create freely available compilers and runtimes for people to experiment with and extend. Instead, Sun locked up the Java codebase, letting few see it, and letting even fewer improve it, so that today, there exists only a small community of people, outside of Sun itself, improving Java.</p>
+ <p class="calibre3">For example, because Sun locked up their code, no one was able to port it to other processors. As I mentioned in the Linux chapter, Debian calls itself “The Universal Operating System” because it contains 18,000 software components that run on 15 different processor architectures:</p>
+ <p lang="zxx" class="calibre3">Intel x86 / IA-32</p>
+ <p lang="zxx" class="calibre3">AMD64</p>
+ <p lang="zxx" class="calibre3">Motorola 68k</p>
+ <p lang="zxx" class="calibre3">Sun SPARC</p>
+ <p lang="zxx" class="calibre3">Alpha</p>
+ <p lang="zxx" class="calibre3">Motorola/IBM PowerPC</p>
+ <p lang="zxx" class="calibre3">PowerPC 64-bit</p>
+ <p lang="zxx" class="calibre3">ARM</p>
+ <p lang="zxx" class="calibre3">MIPS CPUs</p>
+ <p lang="zxx" class="calibre3">HP PA-RISC</p>
+ <p lang="zxx" class="calibre3">IA-64</p>
+ <p lang="zxx" class="calibre3">S/390</p>
+ <p lang="zxx" class="calibre3">SuperH</p>
+ <p lang="zxx" class="calibre3">Big-Endian ARM</p>
+ <p lang="zxx" class="calibre3">Renesas's 32-bit RISC</p>
+ <p class="calibre3">Debian supports 15 processors, but Sun's Java web page lists just four.</p>
+ <p class="calibre3"> A wide variety of platforms allow the programmer to decide which processor is the best choice for his product. By contrast, on Sun's website, you can only download four architectures: x86, PowerPC, AMD64 and Sparc.  </p>
+ <p class="calibre3"> The fact that Java doesn't offer broad support on hardware platforms is a significant consideration. Why invest in a programming language that might not be usable with future hardware? C, and other free languages, provide tremendous hardware flexibility in their widespread adoption.</p>
+ <p class="calibre3">Flexibility and adaptability of programming tools is especially important for embedded devices because, unlike the PC environment where processors and operating systems have similar functionality, the software must be customized for embedding on low-end hardware, something that Sun did not enable.</p>
+ <p class="calibre3">For its first five years, when everyone was seriously considering using it, Java ran ten times slower than C because it was interpreted rather than compiled, exactly like Lisp. This would have been fixed a lot faster if Sun had involved and encouraged the existing free compiler development community.</p>
+ <p class="calibre3">Even in 2008, Java programs on my computer don't look like they should. For example, when a program asks to display a file chooser dialog box to the user, below are the results for a Java and a native application:</p>
+ <p class="calibre3"> <img src="wordpress_html_52d11975.png" border="0" class="calibre6"/><br class="calibre4"/><img src="wordpress_html_387a5e1c.png" border="0" class="calibre6"/><br class="calibre4"/><i class="calibre5">	Java file chooser on Linux	Standard Linux file chooser<br class="calibre4"/></i>How does Java not look native in 2008? Let us count the ways.</p>
+ <p class="calibre3">Java had many significant limitations for many years because all progress was held up by Sun.</p>
+ </body>
+</html>

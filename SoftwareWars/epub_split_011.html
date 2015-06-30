@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_11"><a name="1.4.The Feature Race|outline" id="1.4.The Feature Race|outline"></a>
+The Feature Race</h2> <p class="calibre3">One of Microsoft's best arguments against free software over the years has been to tout their new features and use that as “proof” that free software will always be behind proprietary software. The moment a Microsoft product comes out, it always offers features that no one else has. However, most of the features are in fact ones that others do have, and Microsoft is catching up. Nearly every new feature is an evolutionary step forward in a place that Microsoft felt needed work.</p>
+ <p class="calibre3">But like Microsoft, each team in the free software community is improving their code every day. In fact, because Microsoft takes so long to ship, the free software community has often added features before Microsoft. The website <a href="http://kernelnewbies.org/LinuxChanges"><span>http://kernelnewbies.org</span></a>
+ displays the latest list of the Linux features added since the previous release 3-4 months before, and it is typically 15 pages long! For example, here is just the list of driver features added to the 2.6.26 version of the Linux kernel, which had a 3-month dev cycle.</p>
+ <table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" class="calibre10"><col width="128*" class="calibre11"/><col width="128*" class="calibre11"/><tr class="calibre12"><td colspan="2" width="100%" valign="TOP" class="calibre13"> 			<p class="calibre14"><b class="calibre8">Linus 			2.6.26 driver workitems</b></p>
+ 		</td> 	</tr><tr valign="TOP" class="calibre12"><td width="50%" class="calibre13"> 			<p lang="zxx" class="calibre3"><b class="calibre8">4.1. 			IDE/SATA </b> 			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">IDE 			</b> 			</p>
+ 			<p lang="zxx" class="calibre3">Add 			warm-plug support for IDE devices  			</p>
+ 			<p lang="zxx" class="calibre3">Mark 			"idebus=" kernel parameter as obsoleted (take 2)  			</p>
+ 			<p lang="zxx" class="calibre3">Remove 			ide=reverse IDE core  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			"vlb|pci_clock=" parameter  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			"noacpi" / "acpigtf" / "acpionboot" 			parameters  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			"cdrom=" and "chs=" parameters  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			"nodma|noflush|noprobe|nowerr=" parameters  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			Intel SCH PATA driver  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			ide-4drives host driver (take 3)  			</p>
+ 			<p lang="zxx" class="calibre3">gayle: 			add "doubler" parameter  			</p>
+ 			<p lang="zxx" class="calibre3">Remove 			the broken ETRAX_IDE driver  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">SATA 			</b> 			</p>
+ 			<p lang="zxx" class="calibre3">sata_inic162x: 			add cardbus support  			</p>
+ 			<p lang="zxx" class="calibre3">libata: 			prefer hardreset  			</p>
+ 			<p lang="zxx" class="calibre3">ata: 			SWNCQ should be enabled by default  			</p>
+ 			<p lang="zxx" class="calibre3">Make 			SFF support optional  			</p>
+ 			<p lang="zxx" class="calibre3">libata: 			make PMP support optional  			</p>
+ 			<p lang="zxx" class="calibre3">sata_mv: 			disable hotplug for now, enable NCQ on SOC, add basic port 			multiplier support  			</p>
+ 			<p lang="zxx" class="calibre3">sata_fsl: 			Fix broken driver, add port multiplier (PMP) support  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.2. 			Networking </b> 			</p>
+ 			<p lang="zxx" class="calibre3">ssb: 			add a new Gigabit Ethernet driver to the ssb core  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			new qeth device driver,  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			new ctcm driver that reemplaces the old ctc one,  			</p>
+ 			<p lang="zxx" class="calibre3">New 			driver "sfc" for Solarstorm SFC4000 controller.  			</p>
+ 			<p lang="zxx" class="calibre3">Driver 			for IXP4xx built-in Ethernet ports  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support the Korina (IDT RC32434) Ethernet MAC  			</p>
+ 			<p lang="zxx" class="calibre3">iwlwifi: 			Support the HT (802.11n) improvements,,,, add default WEP key host 			command, add 1X HW WEP support, add default WEP HW encryption, use 			HW acceleration decryption by default, hook iwlwifi with Linux 			rfkill, add TX/RX statistics to driver, add debugfs to iwl core, 			enables HW TKIP encryption, add led support, enables RX TKIP 			decryption in HW, remove IWL{4965,3945}_QOS  			</p>
+ 			<p lang="zxx" class="calibre3">ath5k: 			Add RF2413 srev values, add RF2413 initial settings, identify 			RF2413 and deal with PHY_SPENDING, more RF2413 stuff, port to new 			bitrate/channel API, use software encryption for now  			</p>
+ 			<p lang="zxx" class="calibre3">pasemi_mac: 			jumbo frame support, enable GSO by default, basic ethtool support, 			netpoll support  			</p>
+ 			<p lang="zxx" class="calibre3">rt2x00: 			Add per-interface structure, enable master and adhoc mode again, 			enable LED class support for rt2500usb/rt73usb  			</p>
+ 			<p lang="zxx" class="calibre3">e1000e: 			Add interrupt moderation run-time ethtool interface, add support 			for BM PHYs on ICH9  			</p>
+ 			<p lang="zxx" class="calibre3">niu: 			Add support for Neptune FEM/NEM cards for C10 server blades, add 			Support for Sun ATCA Blade Server.  			</p>
+ 			<p lang="zxx" class="calibre3">gianfar: 			Support NAPI for TX Frames  			</p>
+ 			<p lang="zxx" class="calibre3">ehea: 			Add DLPAR memory remove support  			</p>
+ 			<p lang="zxx" class="calibre3">sfc: 			Add TSO support  			</p>
+ 			<p lang="zxx" class="calibre3">b43: 			Add QOS support, add HostFlags HI support, use SSB block-I/O to do 			PIO  			</p>
+ 			<p lang="zxx" class="calibre3">S2io: 			Multiqueue network device support implementation,, enable multi 			ring support, added napi support when MSIX is enabled.  			</p>
+ 			<p lang="zxx" class="calibre3">ixgbe: 			Introduce MSI-X queue vector code, introduce Multiqueue TX, add 			optional DCA infrastructure, introduce adaptive interrupt 			moderation  			</p>
+ 			<p lang="zxx" class="calibre3">uli526x: 			add support for netpoll  			</p>
+ 			<p lang="zxx" class="calibre3">fmvj18x_cs: 			add NextCom NC5310 rev B support  			</p>
+ 			<p lang="zxx" class="calibre3">zd1211rw: 			support for mesh interface and beaconing  			</p>
+ 			<p lang="zxx" class="calibre3">libertas: 			implement SSID scanning for SIOCSIWSCAN  			</p>
+ 			<p lang="zxx" class="calibre3">ethtool: 			Add support for large eeproms  			</p>
+ 			<p lang="zxx" class="calibre3">The 			scheduled bcm43xx removal  			</p>
+ 			<p lang="zxx" class="calibre3">The 			scheduled ieee80211 softmac removal  			</p>
+ 			<p lang="zxx" class="calibre3">The 			scheduled rc80211-simple.c removal  			</p>
+ 			<p lang="zxx" class="calibre3">Remove 			obsolete driver sk98lin  			</p>
+ 			<p lang="zxx" class="calibre3">Remove 			the obsolete xircom_tulip_cb driver  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.3. 			Graphics </b> 			</p>
+ 			<p lang="zxx" class="calibre3">radeon: 			Initial r500 support,,  			</p>
+ 			<p lang="zxx" class="calibre3">intel_agp: 			Add support for Intel 4 series chipsets  			</p>
+ 			<p lang="zxx" class="calibre3">i915: 			Add support for Intel series 4 chipsets  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for Radeon Mobility 9000 chipset  			</p>
+ 			<p lang="zxx" class="calibre3">fb: 			add support for foreign endianness  			</p>
+ 			<p lang="zxx" class="calibre3">pxafb: 			preliminary smart panel interface support,  			</p>
+ 			<p lang="zxx" class="calibre3">Driver 			for Freescale 8610 and 5121 DIU  			</p>
+ 			<p lang="zxx" class="calibre3">intelfb: 			add support for the Intel Integrated Graphics Controller 			965G/965GM  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for Blackfin/Linux logo for framebuffer console  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.4. 			Sound </b> 			</p>
+ 			<p lang="zxx" class="calibre3">hda-codec 			- Allow multiple SPDIF devices, add SI HDMI codec support, add 			support for the OQO Model 2, add support of Zepto laptops, support 			RV7xx HDMI Audio, add model=mobile for AD1884A &amp; co, add 			support of AD1883/1884A/1984A/1984B, add model for cx20549 to 			support laptop HP530, add model for alc883 to support FUJITSU 			Pi2515, add support for Toshiba Equium L30, Map 3stack-6ch-dig 			ALC662 model for Asus P5GC-MX, support of Lenovo Thinkpad X300, 			add Quanta IL1 ALC267 model, add support of AD1989A/AD1989B, add 			model for alc262 to support Lenovo 3000, add model for ASUS 			P5K-E/WIFI-AP, added support for Foxconn P35AX-S mainboard, add 			drivers for the Texas Instruments OMAP processors, add support of 			Medion RIM 2150, support IDT 92HD206 codec  			</p>
+ 			<p lang="zxx" class="calibre3">ice1724 			- Enable AK4114 support for Audiophile192  			</p>
+ 			<p lang="zxx" class="calibre3">ice1712: 			Added support for Delta1010E (newer revisions of Delta1010), added 			support for M-Audio Delta 66E, add Terrasoniq TS88 support  			</p>
+ 			<p lang="zxx" class="calibre3">Davinci 			ASoC support  			</p>
+ 			<p lang="zxx" class="calibre3">intel8x0 			- Add support of 8 channel sound  			</p>
+ 			<p lang="zxx" class="calibre3">ASoC: 			WM9713 driver  			</p>
+ 			<p lang="zxx" class="calibre3">Emagic 			Audiowerk 2 ALSA driver.  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			PC-speaker sound driver  			</p>
+ 			<p lang="zxx" class="calibre3">oxygen: 			add monitor controls  			</p>
+ 			<p lang="zxx" class="calibre3">virtuoso: 			add Xonar DX support  			</p>
+ 			<p lang="zxx" class="calibre3">soc 			- Support PXA3xx AC97  			</p>
+ 			<p lang="zxx" class="calibre3">pxa2xx-ac97: 			Support PXA3xx AC97  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.5. 			Input </b> 			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for WM97xx family touchscreens  			</p>
+ 			<p lang="zxx" class="calibre3">WM97xx 			- add chip driver for WM9705 touchscreen, add chip driver for 			WM9712 touchscreen, add chip driver for WM97123 touchscreen, add 			support for streaming mode on Mainstone  			</p>
+ 			<p lang="zxx" class="calibre3">wacom: 			add support for Cintiq 20WSX  			</p>
+ 			<p lang="zxx" class="calibre3">xpad: 			add support for wireless xbox360 controllers  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			PS/2 serio driver for AVR32 devices  			</p>
+ 			<p lang="zxx" class="calibre3">aiptek: 			add support for Genius G-PEN 560 tablet  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			Zhen Hua driver  			</p>
+ 			<p lang="zxx" class="calibre3">HID: 			force feedback driver for Logitech Rumblepad 2, Logitech diNovo 			Mini pad support  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.6. 			Video</b></p>
+ 			<p lang="zxx" class="calibre3">V4L2 			soc_camera driver for PXA270,,  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for the MT9M001 camera  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for the MT9V022 camera  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for the ISL6405 dual LNB supply chip  			</p>
+ 			<p lang="zxx" class="calibre3">Initial 			DVB-S support for MD8800 /CTX948  			</p>
+ 			<p lang="zxx" class="calibre3">cx23885: 			Add support for the Hauppauge HVR1400, add generic cx23417 			hardware encoder support  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			mxl5505s driver for MaxiLinear 5505 chipsets, basic digital 			support.  			</p>
+ 		</td> 		<td width="50%" class="calibre13"> 			<p lang="zxx" class="calibre3"><b class="calibre8">4.6. 			Video</b></p>
+ 			<p lang="zxx" class="calibre3">cx88: 			Add support for the Dvico PCI Nano, add xc2028/3028 boards, add 			support for tuner-xc3028  			</p>
+ 			<p lang="zxx" class="calibre3">saa7134: 			add support for the MSI TV@nywhere A/D v1.1 card, add support for 			the Creatix CTX953_V.1.4.3 Hybrid  			</p>
+ 			<p lang="zxx" class="calibre3">saa717x: 			add new audio/video decoder i2c driver  			</p>
+ 			<p lang="zxx" class="calibre3">Support 			DVB-T tuning on the DViCO FusionHDTV DVB-T Pro  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for xc3028-based boards  			</p>
+ 			<p lang="zxx" class="calibre3">ivtv: 			add support for Japanese variant of the Adaptec AVC-2410  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			basic support for Prolink Pixelview MPEG 8000GT  			</p>
+ 			<p lang="zxx" class="calibre3">bttv: 			added support for Kozumi KTV-01C card  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for Kworld ATSC 120  			</p>
+ 			<p lang="zxx" class="calibre3">CX24123: 			preparing support for CX24113 tuner  			</p>
+ 			<p lang="zxx" class="calibre3">Added 			support for Terratec Cinergy T USB XXS  			</p>
+ 			<p lang="zxx" class="calibre3">budget: 			Add support for Fujitsu Siemens DVB-T Activy Budget  			</p>
+ 			<p lang="zxx" class="calibre3">Support 			for DVB-S demod PN1010 (clone of S5H1420) added  			</p>
+ 			<p lang="zxx" class="calibre3">Added 			support for SkyStar2 rev2.7 and ITD1000 DVB-S tuner  			</p>
+ 			<p lang="zxx" class="calibre3">em28xx-dvb: 			Add support for HVR950, add support for the HVR-900  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for Hauppauge HVR950Q/HVR850/FusioHDTV7-USB  			</p>
+ 			<p lang="zxx" class="calibre3">HVR950Q 			Hauppauge eeprom support  			</p>
+ 			<p lang="zxx" class="calibre3">Adding 			support for the NXP TDA10048HN DVB OFDM demodulator  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for the Hauppauge HVR-1200  			</p>
+ 			<p lang="zxx" class="calibre3">pvrusb2-dvb: 			add DVB-T support for Hauppauge pvrusb2 model 73xxx  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for Beholder BeholdTV H6  			</p>
+ 			<p lang="zxx" class="calibre3">cx18: 			new driver for the Conexant CX23418 MPEG encoder chip  			</p>
+ 			<p lang="zxx" class="calibre3"> 			s5h1411: Adding support for 			this ATSC/QAM demodulator  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.7. 			SCSI </b> 			</p>
+ 			<p lang="zxx" class="calibre3">zfcp: 			Add trace records for recovery thread and its queues, add traces 			for state changes., trace all triggers of error recovery 			activity,register new recovery trace., remove obsolete erp_dbf 			trace, add trace records for recovery actions.  			</p>
+ 			<p lang="zxx" class="calibre3">qla2xxx: 			Add support for host supported speeds FC transport attribute., add 			FC-transport Asynchronous Event Notification support., add 			hardware trace-logging support., add Flash Descriptor Table layout 			support., add ISP84XX support., add midlayer target/device reset 			support.  			</p>
+ 			<p lang="zxx" class="calibre3">iscsi: 			extended cdb support, bidi support at the generic libiscsi level, 			bidi support for iscsi_tcp  			</p>
+ 			<p lang="zxx" class="calibre3">scsi_debug: 			support large non-fake virtual disk  			</p>
+ 			<p lang="zxx" class="calibre3">gdth: 			convert to PCI hotplug API  			</p>
+ 			<p lang="zxx" class="calibre3">st: 			add option to use SILI in variable block reads  			</p>
+ 			<p lang="zxx" class="calibre3">megaraid_sas: 			Add the new controller(1078DE) support to the driver  			</p>
+ 			<p lang="zxx" class="calibre3">m68k: 			new mac_esp scsi driver  			</p>
+ 			<p lang="zxx" class="calibre3">bsg: 			add large command support  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for variable length extended commands  			</p>
+ 			<p lang="zxx" class="calibre3">aacraid: 			Add Power Management support  			</p>
+ 			<p lang="zxx" class="calibre3">dpt_i2o: 			64 bit support, sysfs  			</p>
+ 			<p lang="zxx" class="calibre3">Firmware: 			add iSCSI iBFT Support  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.8. 			WATCHDOG </b> 			</p>
+ 			<p lang="zxx" class="calibre3">Add 			a watchdog driver based on the CS5535/CS5536 MFGPT timers  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			ICH9DO into the iTCO_wdt.c driver  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.9. 			HWMON </b> 			</p>
+ 			<p lang="zxx" class="calibre3">thermal: 			add hwmon sysfs I/F  			</p>
+ 			<p lang="zxx" class="calibre3">ibmaem: 			new driver for power/energy/temp meters in IBM System X hardware  			</p>
+ 			<p lang="zxx" class="calibre3">i5k_amb: 			support Intel 5400 chipset  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.10. 			USB </b> 			</p>
+ 			<p lang="zxx" class="calibre3">ISP1760 			HCD driver  			</p>
+ 			<p lang="zxx" class="calibre3">pxa27x_udc 			driver  			</p>
+ 			<p lang="zxx" class="calibre3">CDC 			WDM driver  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			Cypress c67x00 OTG controller core driver,,  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			HP hs2300 Broadband Wireless Module to sierra.c  			</p>
+ 			<p lang="zxx" class="calibre3">Partial 			USB embedded host support  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			usb-serial spcp8x5 driver  			</p>
+ 			<p lang="zxx" class="calibre3">r8a66597-hcd: 			Add support for SH7366 USB host  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			Zoom Telephonics Model 3095F V.92 USB Mini External modem to 			cdc-acm  			</p>
+ 			<p lang="zxx" class="calibre3">Support 			for the ET502HS HDSPA modem  			</p>
+ 			<p lang="zxx" class="calibre3">atmel_usba_udc: 			Add support for AT91CAP9 UDPHS  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.11. 			FireWire </b> 			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">release 			notes at linux1394-user </b> 			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.12. 			Infiniband </b> 			</p>
+ 			<p lang="zxx" class="calibre3">IPoIB: 			Use checksum offload support if available, add LSO support, add 			basic ethtool support, support modifying IPoIB CQ event 			moderation, handle 4K IB MTU for UD (datagram) mode  			</p>
+ 			<p lang="zxx" class="calibre3">ipath: 			Enable 4KB MTU, add code to support multiple link speeds and 			widths, EEPROM support for 7220 devices, robustness improvements, 			cleanup, add support for IBTA 1.2 Heartbeat  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for IBA7220,,,,,,,,,  			</p>
+ 			<p lang="zxx" class="calibre3">mthca: 			Add checksum offload support  			</p>
+ 			<p lang="zxx" class="calibre3">mlx4: 			Add checksum offload support, add IPoIB LSO support to mlx4,  			</p>
+ 			<p lang="zxx" class="calibre3">RDMA/cxgb3: 			Support peer-2-peer connection setup  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.13. 			ACPI and Power Management </b> 			</p>
+ 			<p lang="zxx" class="calibre3">ACPICA: 			Disassembler support for new ACPI tables  			</p>
+ 			<p lang="zxx" class="calibre3">eeepc-laptop: 			add base driver, add backlight, add hwmon fan control  			</p>
+ 			<p lang="zxx" class="calibre3">thinkpad-acpi: 			add sysfs led class support for thinklight (v3.1), add sysfs led 			class support to thinkpad leds (v3.2)  			</p>
+ 			<p lang="zxx" class="calibre3">Remove 			legacy PM  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.14. 			MTD </b> 			</p>
+ 			<p lang="zxx" class="calibre3">m25p80: 			add FAST_READ access support to M25Pxx, add Support for ATMEL 			AT25DF641 64-Megabit SPI Flash  			</p>
+ 			<p lang="zxx" class="calibre3">JEDEC: 			add support for the ST M29W400DB flash chip  			</p>
+ 			<p lang="zxx" class="calibre3">NAND: 			support for pxa3xx  			</p>
+ 			<p lang="zxx" class="calibre3">NOR: 			Add JEDEC support for the SST 36VF3203 flash chip  			</p>
+ 			<p lang="zxx" class="calibre3">NAND: 			FSL UPM NAND driver  			</p>
+ 			<p lang="zxx" class="calibre3">AR7 			mtd partition map  			</p>
+ 			<p lang="zxx" class="calibre3">NAND: 			S3C2410 Large page NAND support  			</p>
+ 			<p lang="zxx" class="calibre3">NAND: 			Hardware ECC controller on at91sam9263 / at91sam9260  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.15. 			I2C </b> 			</p>
+ 			<p lang="zxx" class="calibre3">Add 			support for device alias names  			</p>
+ 			<p lang="zxx" class="calibre3">Convert 			most new-style drivers to use module aliasing  			</p>
+ 			<p lang="zxx" class="calibre3">Renesas 			SH7760 I2C master driver  			</p>
+ 			<p lang="zxx" class="calibre3">New 			driver for the SuperH Mobile I2C bus controller  			</p>
+ 			<p lang="zxx" class="calibre3">Convert 			remaining new-style drivers to use module aliasing  			</p>
+ 			<p lang="zxx" class="calibre3"><b class="calibre8">4.16. 			Various </b> 			</p>
+ 			<p lang="zxx" class="calibre3">MMC: 			OMAP: Add back cover switch support  			</p>
+ 			<p lang="zxx" class="calibre3">MMC: 			OMAP: Introduce new multislot structure and change driver to use 			it  			</p>
+ 			<p lang="zxx" class="calibre3">mmc: 			mmc host test driver  			</p>
+ 			<p lang="zxx" class="calibre3">4981/1: 			[KS8695] Simple LED driver  			</p>
+ 			<p lang="zxx" class="calibre3">leds: 			Add mail LED support for "Clevo D400P"  			</p>
+ 			<p lang="zxx" class="calibre3">leds: 			Add support to leds with readable status  			</p>
+ 			<p lang="zxx" class="calibre3">leds: 			Add new driver for the LEDs on the Freecom FSG-3  			</p>
+ 			<p lang="zxx" class="calibre3">RAPIDIO: 			 			</p>
+ 			<p lang="zxx" class="calibre3">Add 			RapidIO multi mport support  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			OF-tree support to RapidIO controller driver  			</p>
+ 			<p lang="zxx" class="calibre3">Add 			serial RapidIO controller support, which includes MPC8548, MPC8641 			 			</p>
+ 			<p lang="zxx" class="calibre3">edac: 			new support for Intel 3100 chipset  			</p>
+ 			<p lang="zxx" class="calibre3">Basic 			braille screen reader support  			</p>
+ 			<p lang="zxx" class="calibre3">ntp: 			support for TAI  			</p>
+ 			<p lang="zxx" class="calibre3"> 			RTC: Ramtron FM3130 RTC 			support</p>
+ 		</td> 	</tr></table><p class="calibre3">Don't worry if you don't understand what these things mean as I don't either. It is just important to understand that even the hardware of computers are too big and complicated for one company to oversee the development of.</p>
+ <p class="calibre3">This is just a portion of the code changes for that version of Linux, and doesn't include work in the file systems, networking, performance, architecture-specific work, and so forth.</p>
+ <p class="calibre3">Free software has added countless features before Microsoft. However, many of these features are so obscure that your eyes would glaze over reading the list. Anyone who focuses on the highly-touted features in Microsoft's latest release is missing the larger picture: even when these features are compelling, they often make you more deeply tied into the proprietary world and make it harder to migrate away.</p>
+ <p class="calibre3">Microsoft's new software always has new features, but usually only one piece of code for a scenario. Linux supports <span><span>60 file systems</span></span>, including several clustering solutions, that allow a seamless scale-out of disk storage amongst a group of servers. Microsoft supports <span>just one, which is </span>tied very tightly to its system, which in turn limits its flexibility. Free software also approaches solutions from different directions. There are several ways to attack virtualization and Linux is working on them in parallel and finding what is common between them.<a name="sdfootnote12anc" href="epub_split_112.html#sdfootnote12sym" id="sdfootnote12anc"><sup class="calibre7">8</sup></a>
+</p>
+ </body>
+</html>

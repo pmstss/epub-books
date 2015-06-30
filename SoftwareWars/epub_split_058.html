@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h1 class="calibre1" id="calibre_pb_58"><a name="2.The Java Mess|outline" id="2.The Java Mess|outline"></a>
+ The Java Mess</h1> <i class="calibre5">I think everybody hates Java as a desktop thing. I see Java mentioned a lot lately, but all of the mentions within the last year have been of Java as a server language, not as a desktop language. If you go back a year and a half, everybody was talking about Java on the desktop. They aren't anymore. It's dead. And once you're dead on the desktop, my  personal opinion is you're dead. If servers are everything you have, just forget it. Why do you think Sun, HP — everybody — is nervous about Microsoft? It's not because they make great servers. It's because they control the desktop. Once you control the desktop, you control the servers.</i> <i class="calibre5">It's no longer something that will revolutionize the industry. It could have revolutionized the industry if it was on the desktop, but I don't see that happening anymore. I hope I'm wrong. Really. I just don't think I am.</i> <i class="calibre5">—<a href="http://sunsite.uakom.sk/sunworldonline/swol-08-1998/swol-08-torvalds.html"><span>Linus Torvalds</span></a>
+, 1998</i> <i class="calibre5">A company should build a process that systematically looks at every product, every service, every process, every policy, every market with the question, “If we weren't doing this already, knowing what we now know, would we start it, would we go into it?” If not, how quickly can we get out?</i> <i class="calibre5">—Peter Drucker</i> <p lang="zxx" class="calibre3">class JavaProgram</p>
+ <p lang="zxx" class="calibre3">{</p>
+ <p lang="zxx" class="calibre3">    public static <span>void </span><span>m</span><span>ain(</span><span>s</span><span>tring args</span><span><span>[]</span></span>)</p>
+ <p lang="zxx" class="calibre3">    {</p>
+ <p lang="zxx" class="calibre3">        int counter = 1; //Add up all the integers from 1 thru 10</p>
+ <p lang="zxx" class="calibre3">        int sum = 0;     //Store value in variable sum</p>
+ <p lang="zxx" class="calibre3">   </p>
+ <p lang="zxx" class="calibre3">        while (counter &lt;= 10)</p>
+ <p lang="zxx" class="calibre3">        {</p>
+ <p lang="zxx" class="calibre3">            sum = sum + counter;  </p>
+ <p lang="zxx" class="calibre3">            counter = counter + 1;</p>
+ <p lang="zxx" class="calibre3">        }</p>
+ <p lang="zxx" class="calibre3">        <span>System.out.println</span>("Numbers 1-10 add to: " + sum);</p>
+ <p lang="zxx" class="calibre3">    }</p>
+ <p lang="zxx" class="calibre3">}</p>
+ <p class="calibre3">Java is relatively elegant, and should have replaced C and C++. The highlighted portions show the very few places that would need changing to port to C#.</p>
+ <p class="calibre3"><span>I</span>n 1995, Sun Microsystems created a next-generation programming language called Java, something <span>that could </span>have been the most significant part of their legacy, more important than their Sparc processor, Solaris (their flavor of Unix), or anything else. Java had the potential to change the software industry by becoming the next generation C/C++, but now I think it is a dying language. (Java is similar in name to Javascript, the programming language of web browsers, and both are similar to C, but the languages and runtimes are incompatible and different.)</p>
+ <p class="calibre3">At first glance, Java looks quite like C, and very much like Microsoft's C#. Sun's Java adopted much of the syntax and semantics of C but added object orientation and many other language innovations, including garbage collection, and they made no effort to be 100% backwards compatible like C++ did.</p>
+ <p class="calibre3">While Java has many important technical advancements, it has achieved only a small fraction of the universal status it should have. Java should have replaced C and C++, languages desperate to be taken out back and shot! However, Java did not, and one of the biggest reasons why software is in shambles today is because Sun repeatedly screwed the pooch with Java.</p>
+ <p class="calibre3">In mid-2006, after Scott McNealy's departure as CEO, Sun began making Java free, attempting to solve some of the issues mentioned in this chapter, but Java grew up as proprietary and this has left indelible scars on it. I will discuss why making it free won't change things at the end of the chapter.</p>
+ <p class="calibre3">For those not in the software business, it is hard to describe the ire many programmers have felt towards Sun. This frustration is rooted in the special part tools play in the life of a software developer. A programmer is a tinkerer; he tinkers with his own tools as much as he concentrates on the job at hand. Software tools are continuously refashioned. If I need to process columns of data in a text file I receive from the Internet, it is almost as easy to fashion a tool to accomplish the task as it is to do it by hand. (A spreadsheet would be a useful tool, but there are other possible ones. A web server isn't going to load a spreadsheet to extract and process simple data from a text file.) A suitable tool might not exist, or might not be exactly suitable to the particular task until it is tinkered with and made into the proper tool for the job.</p>
+ </body>
+</html>

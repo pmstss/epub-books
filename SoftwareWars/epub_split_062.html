@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_62"><a name="2.4.Sun fragmented Java|outline" id="2.4.Sun fragmented Java|outline"></a>
+Sun fragmented Java</h2> <p class="calibre3">Because of fear, Sun decided to lock up their code to prevent it from being extended by anyone else. This short-sighted idea, but even worse, the law of unintended consequences came up and bit them in the tush. Because Sun made only the specs but not the code available, many third parties started producing their own Java runtimes so they could control their own destiny. Wikipedia <a href="http://en.wikipedia.org/wiki/List_of_Java_virtual_machines"><span>documents</span></a>
+ 34 different third-party Java runtimes, and their list doesn't include any of the embedded Java implementations, which are harder to count.</p>
+ <p class="calibre3">Everyone who wanted to use but improve Java would have to start from scratch. This created much bigger areas of incompatibility because building a Java implementation from scratch requires a lot of work, and they could even unknowingly cut corners.</p>
+ <p class="calibre3">The biggest problem with so many runtimes, besides the wasted efforts, is that the imperfect specs became the reference rather than the code because there wasn't an agreed upon codebase containing the official Java design.</p>
+ <p class="calibre3">Backward compatibility is the greatest cause of complexity, and therefore unreliability, in computers today. As described in the Linux chapter, one of the Linux kernel's major innovations is that it avoids backward compatibility issues by encouraging all code into one tree. This makes it much easier to make changes to the design.</p>
+ <p class="calibre3">With an official source tree, Java could become whatever we need it to be, avoiding the mess of different codebases, and serving as a reference when the paper specs are ambiguous. It sounds chaotic, but things quickly converge, and on something with minimal excess complexity, because it can be removed.</p>
+ <p class="calibre3">While the Java specs were not good because feedback came years later, they became etched in stone because once 30 runtimes have a particular piece of functionality, it becomes very hard to change them all. Even if Sun let you alter their design, it might take years to make any changes. In contrast, if the Linux kernel is missing a feature, you can send some code to Linus and have it in the official codebase immediately.</p>
+ </body>
+</html>

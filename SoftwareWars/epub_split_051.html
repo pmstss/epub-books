@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8"/>
+    <title>After The Software Wars</title>
+    <meta name="AUTHOR" content="Keith Curtis"/>
+    <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/><link href="stylesheet.css" type="text/css" rel="stylesheet"/><style type="text/css">
+		@page { margin-bottom: 5.000000pt; margin-top: 5.000000pt; }</style></head>
+  <body dir="LTR" class="calibre">
+<h2 class="calibre2" id="calibre_pb_51"><a name="1.25.Lisp and Garbage Collection|outline" id="1.25.Lisp and Garbage Collection|outline"></a>
+ Lisp and Garbage Collection</h2> <i class="calibre5">Please don't assume Lisp is only useful for Animation and Graphics, AI, Bioinformatics, B2B and E-Commerce, Data Mining, EDA/Semiconductor applications, Expert Systems, Finance, Intelligent Agents, Knowledge Management, Mechanical CAD, Modeling and Simulation, Natural Language, Optimization, Research, Risk Analysis, Scheduling, Telecom, and Web Authoring just because these are the only things they happened to list.</i> <i class="calibre5">—Kent Pitman, hacker</i> <i class="calibre5">The future has already arrived; it's just not evenly distributed yet.</i> <i class="calibre5">—William Gibson, science-fiction writer</i> <p class="calibre3">Memory, handed out in contiguous chunks called buffers or arrays, is the scratch space for your processor. Your computer needs to read bitmaps and e-mails from the disk or network into memory in order to display or let you edit them. (Your operating system can actually cheat and pretend to give out lots of memory, and write to disk the infrequently used portions — virtual memory. If you come back to an application after not using it for several hours, you may find your hard drive is busy for several seconds because it is loading all of your data and code back into the real memory.)</p>
+ <p class="calibre3">Memory contains the current state of all the applications on your computer, and is therefore an extremely precious resource. Garbage collection is a system that transparently manages the computer's memory and automatically reclaims the unused “garbage” from the programmer when he is done using it. I will spend the rest of the chapter explaining how this technology changes programming, so sit tight if my explanation doesn't make sense yet.</p>
+ <p class="calibre3">John McCarthy created GC in 1959 when he created Lisp, a language invented ten years before C, but which never became accepted into the mainstream:</p>
+ <p lang="zxx" class="calibre3"> (defun finder (obj vec start end)</p>
+ <p lang="zxx" class="calibre3">  (let ((range (- end start)))</p>
+ <p lang="zxx" class="calibre3">    (if (zerop range)</p>
+ <p lang="zxx" class="calibre3">        (if (eql obj (aref vec start))</p>
+ <p lang="zxx" class="calibre3">            obj  </p>
+ <p lang="zxx" class="calibre3">            nil)</p>
+ <p lang="zxx" class="calibre3">        (let ((mid (+ start (round (/ range 2)))))</p>
+ <p lang="zxx" class="calibre3">          (let ((obj2 (aref vec mid)))</p>
+ <p lang="zxx" class="calibre3">            (if (&lt; obj obj2)</p>
+ <p lang="zxx" class="calibre3">                (finder obj vec start (- mid 1))</p>
+ <p lang="zxx" class="calibre3">                (if (&gt; obj obj2)</p>
+ <p lang="zxx" class="calibre3">                    (finder obj vec (+ mid 1) end)</p>
+ <p lang="zxx" class="calibre3">                    obj)))))))</p>
+ <p class="calibre3"> The binary search function written in Lisp is a simple algorithm for quickly finding values in a sorted list. It runs in Log<sub class="calibre24">2</sub>(n) time because at each step, it divides the size of the array in half, similar to how we look up words in a dictionary. <span>There are many faster and more complicated algorithms, and search is a very interesting and large topic in computer science, but 99% of the time, ye olde binary search is good enough.</span></p>
+ <p class="calibre3">C and C++ was based on BCPL and other languages before it, none of which had garbage collection. Lisp is a language built by mathematicians rather than operating systems hackers. Lisp pioneered GC, but also was clean and powerful, and had a number of innovations that even C# and Java don't have today.<a name="sdfootnote38anc" href="epub_split_112.html#sdfootnote38sym" id="sdfootnote38anc"><sup class="calibre7">3</sup></a>
+</p>
+ <p class="calibre3"><span>Wikipedia's web page doesn't explain why Lisp never became accepted for mainstream applications, but perhaps the biggest answer is performance.<a name="sdfootnote39anc" href="epub_split_112.html#sdfootnote39sym" id="sdfootnote39anc"><sup class="calibre7">4</sup></a>
+ So instead, people looked at other, more primitive, but compiled languages. The most expensive mistake in the history of computing is that the industry adopted the non-GC language C, rather than Lisp.</span></p>
+ <p class="calibre3"><span>While Lisp had many innovations, its most important was garbage collection. </span><span><span><span><span>Garbage collection requires significant infrastructure on the part of the system and is a threshold test for an intelligent programming language.</span></span></span></span><span><span><span><span><a name="sdfootnote40anc" href="epub_split_112.html#sdfootnote40sym" id="sdfootnote40anc"><sup class="calibre7">5</sup></a>
+</span></span></span></span></p>
+ <p class="calibre3"><span>Because so few of the most important codebases today have adopted GC, </span><span><span>I must explain how it improves software so my geek brethren start using it.</span></span></p>
+ <p class="calibre3"><span>The six factors of software quality are: reliability, portability, efficiency, maintainability, </span>functionality, and usability; <span>I will discuss how GC affects all of these factors. The most important factor is reliability, the </span><i class="calibre5"><span>sine qua non</span></i><span> of software.</span></p>
+  	 		</body>
+</html>
